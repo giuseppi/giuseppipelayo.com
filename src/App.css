@@ -37,6 +37,7 @@ html {
   display: inline-block;
   float: "left";
   padding: 10px 0;
+  transition: opacity 0.75s, transform 0.5s ease-in-out;
 }
 
 .name {
@@ -62,8 +63,49 @@ html {
   font-family: "Secular One", sans-serif;
   margin-left: 5rem;
   font-size: 2rem;
+  position: relative;
 }
 
-/* .navlink:hover {
-  color: #dee2e6;
-} */
+.navlink #nav-about {
+  left: -0.9rem;
+}
+
+.navlink #nav-contact {
+  left: -1.25rem;
+}
+
+.navlink #nav-projects {
+  left: -1.3rem;
+}
+
+.nav-icon {
+  transition: opacity 0.75s, transform 0.5s;
+}
+
+.nav-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.25rem;
+  transition: opacity 0.75s, visibility 0.35s, transform 0.5s;
+}
+
+.navlink:hover .nav-icon {
+  opacity: 0.35;
+  transform: translate(0, -0.25rem);
+}
+
+.navlink:hover .nav-description {
+  transform: translate(0, 1rem);
+  visibility: visible;
+  opacity: 1;
+}
+
+.home:hover {
+  opacity: 0.5;
+  transform: skew(5deg, 5deg);
+}

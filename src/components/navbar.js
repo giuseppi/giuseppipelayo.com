@@ -10,13 +10,22 @@ const Navbar = () => {
       </Link>
       <nav className="nav-content">
         <NavLink className="navlink" exact="true" activeclassname="active" to="/">
-          <FontAwesomeIcon icon={faUser} />
+          <FontAwesomeIcon icon={faUser} className="nav-icon" />
+          <p className="nav-description" id="nav-about">
+            about
+          </p>
         </NavLink>
         <NavLink className="navlink" exact="true" activeclassname="active" to="/">
-          <FontAwesomeIcon icon={faSuitcase} />
+          <FontAwesomeIcon icon={faSuitcase} className="nav-icon" />
+          <p className="nav-description" id="nav-projects">
+            projects
+          </p>
         </NavLink>
         <NavLink className="navlink" exact="true" activeclassname="active" to="/">
-          <FontAwesomeIcon icon={faEnvelope} />
+          <FontAwesomeIcon icon={faEnvelope} className="nav-icon" />
+          <p className="nav-description" id="nav-contact">
+            contact
+          </p>
         </NavLink>
       </nav>
     </div>
