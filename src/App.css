@@ -20,6 +20,19 @@ html {
   position: relative;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* header.js */
+
+.header-container {
+  flex-grow: 4;
+}
+
+/* navbar.js */
+
 .navbar {
   white-space: nowrap;
   display: inline-block;
@@ -76,6 +89,10 @@ html {
   left: -1.3rem;
 }
 
+.navlink #nav-darkmode {
+  left: -0.35rem;
+}
+
 .nav-icon {
   transition: opacity 0.75s, transform 0.5s;
 }
@@ -106,4 +123,14 @@ html {
 .home:hover {
   opacity: 0.5;
   transform: skew(5deg, 5deg);
+}
+
+/* projects.js */
+
+.projects-section {
+  width: 100%;
+  padding: 80px 0;
+  top: 50px;
+  background-color: white;
+  display: block;
 }

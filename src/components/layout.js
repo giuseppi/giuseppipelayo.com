@@ -1,11 +1,12 @@
-import Intro from "./intro.js";
-import Navbar from "./navbar.js";
-
+import Header from "./header.js";
+import Projects from "./projects.js";
 const Layout = () => {
   return (
     <>
-      <Navbar />
-      <Intro />
+      <div className="flex-container">
+        <Header />
+        <Projects />
+      </div>
     </>
   );
 };
