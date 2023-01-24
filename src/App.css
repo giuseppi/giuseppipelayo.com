@@ -29,7 +29,6 @@ html {
 }
 
 .home {
-  /* margin-left: 2rem; */
   color: white;
   text-decoration: none;
   font-family: "Permanent Marker", cursive;
@@ -50,7 +49,6 @@ html {
 }
 
 .nav-content {
-  /* margin-left: 2rem; */
   display: inline-block;
   position: absolute;
   top: 3.75rem;
