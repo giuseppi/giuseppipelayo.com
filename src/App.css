@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 
@@ -42,7 +43,7 @@ html {
   color: white;
   font-family: "League Spartan", sans-serif;
   font-size: 5rem;
-  /* letter-spacing: 6px; */
+  letter-spacing: 3px;
   text-align: center;
   margin-top: 20rem;
 }
@@ -56,9 +57,29 @@ html {
 }
 
 .navlink {
-  color: #6c757d;
+  color: #adb5bd;
   text-decoration: none;
   font-family: "Secular One", sans-serif;
   margin-left: 3rem;
   font-size: 2rem;
+  background-image: linear-gradient(to right, #dee2e6, #dee2e6 50%, #adb5bd 50%);
+  text-decoration: underline;
+  background-size: 200% 100%;
+  background-position: -100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
+
+.navlink:hover {
+  background-position: 0;
+}
+
+.navlink:hover::before {
+  width: 100%;
+}
+
+/* .navlink:hover {
+  color: #dee2e6;
+} */
