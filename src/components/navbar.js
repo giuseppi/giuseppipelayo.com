@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -8,13 +10,13 @@ const Navbar = () => {
       </Link>
       <nav className="nav-content">
         <NavLink className="navlink" exact="true" activeclassname="active" to="/">
-          projects
+          <FontAwesomeIcon icon={faUser} />
         </NavLink>
         <NavLink className="navlink" exact="true" activeclassname="active" to="/">
-          about
+          <FontAwesomeIcon icon={faSuitcase} />
         </NavLink>
         <NavLink className="navlink" exact="true" activeclassname="active" to="/">
-          contact
+          <FontAwesomeIcon icon={faEnvelope} />
         </NavLink>
       </nav>
     </div>

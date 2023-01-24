@@ -57,27 +57,11 @@ html {
 }
 
 .navlink {
-  color: #adb5bd;
+  color: #6c757d;
   text-decoration: none;
   font-family: "Secular One", sans-serif;
-  margin-left: 3rem;
+  margin-left: 5rem;
   font-size: 2rem;
-  background-image: linear-gradient(to right, #dee2e6, #dee2e6 50%, #adb5bd 50%);
-  text-decoration: underline;
-  background-size: 200% 100%;
-  background-position: -100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-
-.navlink:hover {
-  background-position: 0;
-}
-
-.navlink:hover::before {
-  width: 100%;
 }
 
 /* .navlink:hover {
