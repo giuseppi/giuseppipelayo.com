@@ -5,7 +5,8 @@ const Header = () => {
     <>
       <div className="header-container">
         <Navbar />
-        <h1 className="name">Giuseppi Pelayo</h1>
+        <h1 className="name">Hi, I'm Giuseppi</h1>
+        <h1 className="slogan">Aspiring Developer</h1>
       </div>
     </>
   );
