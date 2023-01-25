@@ -1,5 +1,7 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+// FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -10,7 +12,7 @@ const Footer = () => {
         <Link to="/" className="footer-home">
           G
         </Link>
-        <nav className="social-content">
+        <div className="social-content">
           <a className="socialLink" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/giuseppi-pelayo-a971b515a">
             <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" id="linkedin" />
             <p className="social-description" id="social-linkedin">
@@ -23,7 +25,7 @@ const Footer = () => {
               Github
             </p>
           </a>
-        </nav>
+        </div>
       </div>
     </>
   );

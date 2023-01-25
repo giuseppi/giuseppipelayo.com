@@ -50,6 +50,60 @@ html {
 
 /* header.js */
 
+.header-content {
+  display: inline-block;
+  position: absolute;
+  top: 40rem;
+  right: 3rem;
+}
+
+.headerlink {
+  color: #6c757d;
+  text-decoration: none;
+  font-family: "Secular One", sans-serif;
+  font-size: 2rem;
+  position: relative;
+  top: 2rem;
+}
+
+.header-icon {
+  transition: opacity 0.75s, transform 0.5s;
+}
+
+.header-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.25rem;
+  transition: opacity 0.75s, visibility 0.35s, transform 0.5s;
+}
+
+.headerlink:hover .header-icon {
+  opacity: 0;
+  transform: translate(0, -0.25rem);
+}
+
+.headerlink:hover .header-description {
+  transform: translate(0, -1rem);
+  visibility: visible;
+  opacity: 1;
+}
+
+#head-gh {
+  margin-top: 1rem;
+}
+
+#header-linkedin {
+  left: -1.75rem;
+}
+
+#header-github {
+  left: -1rem;
+}
+
 /* navbar.js */
 
 .navbar {
@@ -180,7 +234,6 @@ html {
   text-decoration: none;
   font-family: "Permanent Marker", cursive;
   font-size: 5rem;
-  /* display: inline-block; */
   transition: opacity 0.75s, transform 0.5s ease-in-out;
   display: flex;
   justify-content: center;
@@ -197,7 +250,7 @@ html {
 
 .socialLink {
   color: #6c757d;
-  /* text-decoration: none; */
+  text-decoration: none;
   font-family: "Secular One", sans-serif;
   font-size: 2rem;
   position: relative;
@@ -212,7 +265,6 @@ html {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -221,12 +273,12 @@ html {
 }
 
 .socialLink:hover .social-icon {
-  opacity: 0.35;
+  opacity: 0;
   transform: translate(0, -0.25rem);
 }
 
 .socialLink:hover .social-description {
-  transform: translate(0, 1rem);
+  transform: translate(0, -1rem);
   visibility: visible;
   opacity: 1;
 }
