@@ -11,18 +11,18 @@ const Footer = () => {
           G
         </Link>
         <nav className="social-content">
-          <NavLink className="socialLink" exact="true" activeclassname="active" to="/">
+          <a className="socialLink" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/giuseppi-pelayo-a971b515a">
             <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" id="linkedin" />
             <p className="social-description" id="social-linkedin">
               Linkedin
             </p>
-          </NavLink>
-          <NavLink className="socialLink" exact="true" activeclassname="active" to="/">
+          </a>
+          <a className="socialLink" target="_blank" rel="noreferrer" href="https://github.com/giuseppi">
             <FontAwesomeIcon icon={faGithub} className="social-icon" id="github" />
             <p className="social-description" id="social-github">
               Github
             </p>
-          </NavLink>
+          </a>
         </nav>
       </div>
     </>
