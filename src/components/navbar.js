@@ -34,7 +34,7 @@ const Navbar = () => {
           <NavLink className="navlink" exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faCircleHalfStroke} className="nav-icon" />
             <p className="nav-description" id="nav-darkmode">
-              Dark
+              dark
             </p>
           </NavLink>
         </nav>
