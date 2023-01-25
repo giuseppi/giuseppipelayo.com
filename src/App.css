@@ -185,7 +185,7 @@ html {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 2rem;
+  top: 3rem;
 }
 
 .social-content {
@@ -201,7 +201,7 @@ html {
   font-family: "Secular One", sans-serif;
   font-size: 2rem;
   position: relative;
-  top: 3.5rem;
+  top: 4rem;
 }
 
 .social-icon {
