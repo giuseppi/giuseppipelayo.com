@@ -41,7 +41,7 @@ html {
 .projects-container {
   padding: 80px 0;
   background-color: white;
-  min-height: 750px;
+  min-height: 90vh;
 }
 
 .footer-container {
@@ -208,6 +208,27 @@ html {
 .footer-home:hover {
   opacity: 0.5;
   transform: skew(5deg, 5deg);
+}
+
+/* about.js */
+
+.about-heading,
+.about-description {
+  text-align: center;
+}
+
+.about-heading {
+  font-family: "League Spartan", sans-serif;
+  color: #dee2e6;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+
+.about-description {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #bf0603;
 }
 
 /* projects.js */
