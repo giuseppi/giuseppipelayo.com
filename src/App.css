@@ -79,6 +79,11 @@ html {
   right: 2.5rem;
 }
 
+#header-contact-btn {
+  border: none;
+  background-color: #121417;
+}
+
 .headerlink {
   color: #6c757d;
   text-decoration: none;
@@ -157,7 +162,7 @@ html {
   color: #6c757d;
   text-decoration: none;
   font-family: "Secular One", sans-serif;
-  margin-left: 5rem;
+  margin-left: 4.5rem;
   font-size: 2rem;
   position: relative;
 }
@@ -167,7 +172,7 @@ html {
 }
 
 .navlink #nav-contact {
-  left: -1.25rem;
+  left: -0.75rem;
 }
 
 .navlink #nav-projects {

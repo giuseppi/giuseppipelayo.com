@@ -25,12 +25,12 @@ const Navbar = () => {
               projects
             </p>
           </HashLink>
-          <HashLink className="navlink" exact="true" activeclassname="active" to="/">
+          <button className="navlink" exact="true" activeclassname="active" to="/" id="header-contact-btn">
             <FontAwesomeIcon icon={faEnvelope} className="nav-icon" />
             <p className="nav-description" id="nav-contact">
               contact
             </p>
-          </HashLink>
+          </button>
           <HashLink className="navlink" exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faCircleHalfStroke} className="nav-icon" />
             <p className="nav-description" id="nav-darkmode">
