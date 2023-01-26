@@ -4,6 +4,7 @@ import { HashLink } from "react-router-hash-link";
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -25,6 +26,12 @@ const Footer = () => {
               Github
             </p>
           </a>
+          <HashLink className="socialLink" target="_blank" rel="noreferrer" href="">
+            <FontAwesomeIcon icon={faEnvelope} className="social-icon" id="footer-contact" />
+            <p className="social-description" id="social-contact">
+              Contact
+            </p>
+          </HashLink>
         </div>
       </div>
     </>
