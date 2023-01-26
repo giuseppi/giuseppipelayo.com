@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer-container">
-        <HashLink to="#top" className="footer-home">
+        <HashLink smooth to="#" className="footer-home">
           G
         </HashLink>
         <div className="social-content">
