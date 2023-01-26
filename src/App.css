@@ -48,6 +48,23 @@ html {
 
 /* header.js */
 
+.name {
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-size: 4.25rem;
+  letter-spacing: 3px;
+  margin-top: 30rem;
+  margin-left: 6rem;
+}
+
+.slogan {
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-size: 4.25rem;
+  letter-spacing: 3px;
+  margin-left: 6rem;
+}
+
 .header-content {
   display: inline-block;
   position: absolute;
@@ -120,23 +137,6 @@ html {
   float: "left";
   padding: 10px 0;
   transition: opacity 0.75s, transform 0.5s ease-in-out;
-}
-
-.name {
-  color: white;
-  font-family: "League Spartan", sans-serif;
-  font-size: 4.25rem;
-  letter-spacing: 3px;
-  margin-top: 30rem;
-  margin-left: 6rem;
-}
-
-.slogan {
-  color: white;
-  font-family: "League Spartan", sans-serif;
-  font-size: 4.25rem;
-  letter-spacing: 3px;
-  margin-left: 6rem;
 }
 
 .nav-content {
