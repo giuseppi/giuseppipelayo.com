@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <>
       <div className="footer-container">
-        <Link to="/" className="footer-home">
+        <HashLink to="#top" className="footer-home">
           G
-        </Link>
+        </HashLink>
         <div className="social-content">
           <a className="socialLink" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/giuseppi-pelayo-a971b515a">
             <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" id="linkedin" />
