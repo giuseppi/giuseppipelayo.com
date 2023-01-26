@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,34 +9,34 @@ const Navbar = () => {
   return (
     <>
       <section className="navbar">
-        <Link to="/" className="home">
+        <HashLink to="/" className="home">
           G
-        </Link>
+        </HashLink>
         <nav className="nav-content">
-          <NavLink className="navlink" exact="true" activeclassname="active" to="/">
+          <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#about">
             <FontAwesomeIcon icon={faUser} className="nav-icon" />
             <p className="nav-description" id="nav-about">
               about
             </p>
-          </NavLink>
-          <NavLink className="navlink" exact="true" activeclassname="active" to="/">
+          </HashLink>
+          <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#projects">
             <FontAwesomeIcon icon={faSuitcase} className="nav-icon" />
             <p className="nav-description" id="nav-projects">
               projects
             </p>
-          </NavLink>
-          <NavLink className="navlink" exact="true" activeclassname="active" to="/">
+          </HashLink>
+          <HashLink className="navlink" exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faEnvelope} className="nav-icon" />
             <p className="nav-description" id="nav-contact">
               contact
             </p>
-          </NavLink>
-          <NavLink className="navlink" exact="true" activeclassname="active" to="/">
+          </HashLink>
+          <HashLink className="navlink" exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faCircleHalfStroke} className="nav-icon" />
             <p className="nav-description" id="nav-darkmode">
               dark
             </p>
-          </NavLink>
+          </HashLink>
         </nav>
       </section>
     </>
