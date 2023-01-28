@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleHalfStroke, faEnvelope, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
+import Popup from "./popup.js";
 
 const Navbar = () => {
+  const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <>
       <section className="navbar">
@@ -25,12 +27,13 @@ const Navbar = () => {
               projects
             </p>
           </HashLink>
-          <button className="navlink" exact="true" activeclassname="active" to="/" id="header-contact-btn">
+          <button onclick={() => setButtonPopup(true)} className="navlink" exact="true" activeclassname="active" to="/" id="header-contact-btn">
             <FontAwesomeIcon icon={faEnvelope} className="nav-icon" />
             <p className="nav-description" id="nav-contact">
               contact
             </p>
           </button>
+          <Popup trigger={buttonPopup} />
           <HashLink className="navlink" exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faCircleHalfStroke} className="nav-icon" />
             <p className="nav-description" id="nav-darkmode">

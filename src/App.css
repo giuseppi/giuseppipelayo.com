@@ -131,7 +131,33 @@ html {
   left: -1rem;
 }
 
-/* contact.js */
+/* popup.js */
+
+.popup-container {
+  position: fixed;
+  top: 2.5rem;
+  left: 2.5rem;
+  width: 90vw;
+  height: 90vh;
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background-color: #fff;
+}
+
+.popup-inner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
 
 /* navbar.js */
 
