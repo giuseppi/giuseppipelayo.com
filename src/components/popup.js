@@ -1,6 +1,6 @@
 import React from "react";
 
-const Contact = () => {
+const Popup = (props) => {
   return props.trigger ? (
     <>
       <div className="popup-container">
@@ -15,4 +15,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Popup;
