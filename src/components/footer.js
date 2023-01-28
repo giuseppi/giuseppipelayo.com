@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
-
+import Popup from "./popup";
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
+  const [buttonPopup, setButtonPopup] = useState(false);
+
   return (
     <>
       <div className="footer-container">
@@ -26,12 +28,13 @@ const Footer = () => {
               Github
             </p>
           </a>
-          <HashLink className="socialLink" target="_blank" rel="noreferrer" href="">
+          <button onClick={() => setButtonPopup(true)} className="socialLink" id="footer-contact-btn">
             <FontAwesomeIcon icon={faEnvelope} className="social-icon" id="footer-contact" />
             <p className="social-description" id="social-contact">
               Contact
             </p>
-          </HashLink>
+          </button>
+          <Popup trigger={buttonPopup} setTrigger={setButtonPopup} />
         </div>
       </div>
     </>

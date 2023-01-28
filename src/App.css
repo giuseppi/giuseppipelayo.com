@@ -79,7 +79,8 @@ html {
   right: 2.5rem;
 }
 
-#header-contact-btn {
+#header-contact-btn,
+#footer-contact-btn {
   border: none;
   background-color: #121417;
 }
@@ -358,5 +359,5 @@ html {
 }
 
 #social-contact {
-  left: 2.25rem;
+  left: 2.6rem;
 }

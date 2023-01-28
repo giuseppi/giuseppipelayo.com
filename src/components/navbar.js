@@ -8,6 +8,7 @@ import Popup from "./popup.js";
 
 const Navbar = () => {
   const [buttonPopup, setButtonPopup] = useState(false);
+
   return (
     <>
       <section className="navbar">
@@ -27,13 +28,13 @@ const Navbar = () => {
               projects
             </p>
           </HashLink>
-          <button onclick={() => setButtonPopup(true)} className="navlink" exact="true" activeclassname="active" to="/" id="header-contact-btn">
+          <button onClick={() => setButtonPopup(true)} className="navlink" activeclassname="active" id="header-contact-btn">
             <FontAwesomeIcon icon={faEnvelope} className="nav-icon" />
             <p className="nav-description" id="nav-contact">
               contact
             </p>
           </button>
-          <Popup trigger={buttonPopup} />
+          <Popup trigger={buttonPopup} setTrigger={setButtonPopup} />
           <HashLink className="navlink" exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faCircleHalfStroke} className="nav-icon" />
             <p className="nav-description" id="nav-darkmode">
