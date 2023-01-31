@@ -86,7 +86,7 @@ html {
   z-index: 0.1;
 }
 
-.headerlink {
+.header-link {
   color: #6c757d;
   text-decoration: none;
   font-family: "Secular One", sans-serif;
@@ -110,12 +110,12 @@ html {
   transition: opacity 0.75s, visibility 0.35s, transform 0.5s;
 }
 
-.headerlink:hover .header-icon {
+.header-link:hover .header-icon {
   opacity: 0;
   transform: translate(0, -0.25rem);
 }
 
-.headerlink:hover .header-description {
+.header-link:hover .header-description {
   transform: translate(0, -1rem);
   visibility: visible;
   opacity: 1;
@@ -314,7 +314,7 @@ html {
   justify-content: center;
 }
 
-.footerlink {
+.footer-link {
   color: #6c757d;
   text-decoration: none;
   font-family: "Secular One", sans-serif;
@@ -338,12 +338,12 @@ html {
   transition: opacity 0.75s, visibility 0.35s, transform 0.5s;
 }
 
-.footerlink:hover .footer-icon {
+.footer-link:hover .footer-icon {
   opacity: 0;
   transform: translate(0, -0.25rem);
 }
 
-.footerlink:hover .footer-description {
+.footer-link:hover .footer-description {
   transform: translate(0, -1rem);
   visibility: visible;
   opacity: 1;

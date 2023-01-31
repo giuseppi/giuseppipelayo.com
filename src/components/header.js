@@ -15,20 +15,16 @@ const Header = () => {
         <h1 className="slogan">Aspiring Developer</h1>
         <ul className="header-content">
           <li>
-            <a className="headerlink" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/giuseppi-pelayo-a971b515a">
-              <FontAwesomeIcon icon={faLinkedinIn} className="header-icon" id="header-linkedin-icon" />
-              <p className="header-description" id="header-linkedin-description">
-                Linkedin
-              </p>
-            </a>
+            <SocialItem
+              mediaType={"linkedin"}
+              location={"header"}
+              link={"https://www.linkedin.com/in/giuseppi-pelayo-a971b515a"}
+              icon={faLinkedinIn}
+              description={"LinkedIn"}
+            />
           </li>
           <li>
-            <a className="headerlink" target="_blank" rel="noreferrer" href="https://github.com/giuseppi">
-              <FontAwesomeIcon icon={faGithub} className="header-icon" id="header-github-icon" />
-              <p className="header-description" id="header-github-description">
-                Github
-              </p>
-            </a>
+            <SocialItem mediaType={"github"} location={"header"} link={"https://github.com/giuseppi"} icon={faGithub} description={"Github"} />
           </li>
         </ul>
       </div>

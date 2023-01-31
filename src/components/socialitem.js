@@ -3,12 +3,12 @@ import React from "react";
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const SocialItem = (myID, link, icon, description) => {
+const SocialItem = ({ mediaType, location, link, icon, description }) => {
   return (
     <>
-      <a className="headerlink" target="_blank" rel="noreferrer" href={link}>
-        <FontAwesomeIcon icon={icon} className="header-icon" id="head-li" />
-        <p className="header-description" id={myID}>
+      <a className={`${location}-link`} href={link}>
+        <FontAwesomeIcon icon={icon} className={`${location}-icon`} id={`${location}-${mediaType}-icon`} />
+        <p className={`${location}-description`} id={`${location}-${mediaType}-description`}>
           {description}
         </p>
       </a>
