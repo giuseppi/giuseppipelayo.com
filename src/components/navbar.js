@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NavItem from "./navitem.js";
 import { HashLink } from "react-router-hash-link";
 
 // FontAwesome
@@ -16,12 +17,13 @@ const Navbar = () => {
           G
         </HashLink>
         <nav className="nav-content">
-          <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#about">
+          {/* <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#about">
             <FontAwesomeIcon icon={faUser} className="nav-icon" />
             <p className="nav-description" id="nav-about">
               about
             </p>
-          </HashLink>
+          </HashLink> */}
+          <NavItem className="navlink" activeclassname="active" link={"#about"} icon={faUser} description={"about"} />
           <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#projects">
             <FontAwesomeIcon icon={faSuitcase} className="nav-icon" />
             <p className="nav-description" id="nav-projects">
