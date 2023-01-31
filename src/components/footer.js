@@ -30,11 +30,7 @@ const Footer = () => {
             </p>
           </a>
           <button onClick={() => setButtonPopup(true)} className="socialLink" id="footer-contact-btn">
-            {/* <NavItem myID={"footer-contact"} icon={faEnvelope} description={"Contact"} /> */}
-            <FontAwesomeIcon icon={faEnvelope} className="social-icon" />
-            <p className="social-description" id="footer-contact">
-              Contact
-            </p>
+            <NavItem iconClass={"social"} descClass={"social"} descID={"footer-contact"} icon={faEnvelope} description={"Contact"} />
           </button>
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup} />
         </div>
