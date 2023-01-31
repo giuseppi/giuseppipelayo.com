@@ -3,7 +3,6 @@ import Navbar from "./navbar";
 import SocialItem from "./socialitem.js";
 
 // FontAwesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Header = () => {
