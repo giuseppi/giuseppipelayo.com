@@ -17,20 +17,20 @@ const Footer = () => {
           G
         </HashLink>
         <div className="social-content">
-          <a className="socialLink" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/giuseppi-pelayo-a971b515a">
-            <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" id="footer-linkedin-icon" />
-            <p className="social-description" id="footer-linkedin-description">
+          <a className="footerlink" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/giuseppi-pelayo-a971b515a">
+            <FontAwesomeIcon icon={faLinkedinIn} className="footer-icon" id="footer-linkedin-icon" />
+            <p className="footer-description" id="footer-linkedin-description">
               Linkedin
             </p>
           </a>
-          <a className="socialLink" target="_blank" rel="noreferrer" href="https://github.com/giuseppi">
-            <FontAwesomeIcon icon={faGithub} className="social-icon" id="footer-github-icon" />
-            <p className="social-description" id="footer-github-description">
+          <a className="footerlink" target="_blank" rel="noreferrer" href="https://github.com/giuseppi">
+            <FontAwesomeIcon icon={faGithub} className="footer-icon" id="footer-github-icon" />
+            <p className="footer-description" id="footer-github-description">
               Github
             </p>
           </a>
-          <button onClick={() => setButtonPopup(true)} className="socialLink" id="footer-contact-btn">
-            <NavItem iconClass={"social"} descClass={"social"} descID={"footer-contact"} icon={faEnvelope} description={"Contact"} />
+          <button onClick={() => setButtonPopup(true)} className="footerlink" id="footer-contact-btn">
+            <NavItem iconClass={"footer"} descClass={"footer"} descID={"footer-contact"} icon={faEnvelope} description={"Contact"} />
           </button>
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup} />
         </div>
