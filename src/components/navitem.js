@@ -3,11 +3,11 @@ import React from "react";
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const NavItem = ({ myID, icon, description }) => {
+const NavItem = ({ iconClass, descClass, descID, icon, description }) => {
   return (
     <>
-      <FontAwesomeIcon icon={icon} className="nav-icon" />
-      <p className="nav-description" id={myID}>
+      <FontAwesomeIcon icon={icon} className={`${iconClass}-icon`} />
+      <p className={`${descClass}-description`} id={descID}>
         {description}
       </p>
     </>

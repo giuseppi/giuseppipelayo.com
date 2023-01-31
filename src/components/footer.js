@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
+import NavItem from "./navitem.js";
 import Popup from "./popup";
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,20 +18,21 @@ const Footer = () => {
         </HashLink>
         <div className="social-content">
           <a className="socialLink" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/giuseppi-pelayo-a971b515a">
-            <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" id="linkedin" />
-            <p className="social-description" id="social-linkedin">
+            <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" id="footer-linkedin-icon" />
+            <p className="social-description" id="footer-linkedin-description">
               Linkedin
             </p>
           </a>
           <a className="socialLink" target="_blank" rel="noreferrer" href="https://github.com/giuseppi">
-            <FontAwesomeIcon icon={faGithub} className="social-icon" id="github" />
-            <p className="social-description" id="social-github">
+            <FontAwesomeIcon icon={faGithub} className="social-icon" id="footer-github-icon" />
+            <p className="social-description" id="footer-github-description">
               Github
             </p>
           </a>
           <button onClick={() => setButtonPopup(true)} className="socialLink" id="footer-contact-btn">
-            <FontAwesomeIcon icon={faEnvelope} className="social-icon" id="footer-contact" />
-            <p className="social-description" id="social-contact">
+            {/* <NavItem myID={"footer-contact"} icon={faEnvelope} description={"Contact"} /> */}
+            <FontAwesomeIcon icon={faEnvelope} className="social-icon" />
+            <p className="social-description" id="footer-contact">
               Contact
             </p>
           </button>

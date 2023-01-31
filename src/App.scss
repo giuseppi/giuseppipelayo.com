@@ -83,6 +83,7 @@ html {
 #footer-contact-btn {
   border: none;
   background-color: #121417;
+  z-index: 0.1;
 }
 
 .headerlink {
@@ -120,15 +121,15 @@ html {
   opacity: 1;
 }
 
-#head-gh {
+#header-github-icon {
   margin-top: 1rem;
 }
 
-#header-linkedin {
+#header-linkedin-description {
   left: -1.75rem;
 }
 
-#header-github {
+#header-github-description {
   left: -1rem;
 }
 
@@ -348,22 +349,19 @@ html {
   opacity: 1;
 }
 
-#github {
+#footer-github-icon {
   margin-left: 3.5rem;
+  margin-right: 3.5rem;
 }
 
-#social-linkedin {
+#footer-linkedin-description {
   left: -1.75rem;
 }
 
-#social-github {
+#footer-github-description {
   left: 2.4rem;
 }
 
 #footer-contact {
-  margin-left: 3.5rem;
-}
-
-#social-contact {
-  left: 2.6rem;
+  left: -0.9rem;
 }

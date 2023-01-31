@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./navbar";
+import SocialItem from "./socialitem.js";
 
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,16 +16,16 @@ const Header = () => {
         <ul className="header-content">
           <li>
             <a className="headerlink" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/giuseppi-pelayo-a971b515a">
-              <FontAwesomeIcon icon={faLinkedinIn} className="header-icon" id="head-li" />
-              <p className="header-description" id="header-linkedin">
+              <FontAwesomeIcon icon={faLinkedinIn} className="header-icon" id="header-linkedin-icon" />
+              <p className="header-description" id="header-linkedin-description">
                 Linkedin
               </p>
             </a>
           </li>
           <li>
             <a className="headerlink" target="_blank" rel="noreferrer" href="https://github.com/giuseppi">
-              <FontAwesomeIcon icon={faGithub} className="header-icon" id="head-gh" />
-              <p className="header-description" id="header-github">
+              <FontAwesomeIcon icon={faGithub} className="header-icon" id="header-github-icon" />
+              <p className="header-description" id="header-github-description">
                 Github
               </p>
             </a>
