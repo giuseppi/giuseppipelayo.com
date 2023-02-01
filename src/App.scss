@@ -114,7 +114,7 @@ html {
 }
 
 .header-link:hover .header-icon {
-  opacity: 0;
+  opacity: 0.25;
   transform: translate(0, -0.25rem);
 }
 
@@ -335,15 +335,16 @@ html {
   visibility: hidden;
   opacity: 0;
   font-size: 1.25rem;
-  transition: opacity 0.75s, visibility 0.35s, transform 0.5s;
+  transition: color 1s ease, opacity 0.75s, visibility 0.35s, transform 0.5s;
 }
 
 .footer-link:hover .footer-icon {
-  opacity: 0;
+  opacity: 0.25;
   transform: translate(0, -0.25rem);
 }
 
 .footer-link:hover .footer-description {
+  color: #239ccd;
   transform: translate(0, -1rem);
   visibility: visible;
   opacity: 1;
