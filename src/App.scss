@@ -30,7 +30,6 @@ html {
 .header-container {
   background-color: #121417;
   min-height: 100vh;
-  display: grid;
 }
 
 .about-container {
@@ -57,7 +56,10 @@ html {
 .general {
   color: white;
   font-family: "League Spartan", sans-serif;
-  place-self: center;
+  position: absolute;
+  top: 50%;
+  // left: 50%;
+  transform: translate(25%, -50%);
 }
 
 .name {
@@ -72,11 +74,11 @@ html {
 }
 
 .header-content {
-  display: inline-block;
   list-style: none;
   position: absolute;
-  top: 32rem;
-  right: 2.5rem;
+  top: 47.5%;
+  right: 2.5%;
+  transform: translate(0, -47.5%);
 }
 
 #header-contact-btn,
@@ -170,7 +172,7 @@ html {
 /* navbar.js */
 
 .navbar {
-  white-space: nowrap;
+  height: 25vh;
   margin-left: 5rem;
 }
 
