@@ -86,6 +86,7 @@ html {
   border: none;
   background-color: #121417;
   z-index: 0.1;
+  cursor: pointer;
 }
 
 .header-link {
@@ -218,7 +219,7 @@ html {
 }
 
 .nav-icon {
-  transition: opacity 0.75s, transform 0.5s;
+  transition: color 1s ease, transform 0.5s;
 }
 
 .nav-description {
@@ -234,7 +235,7 @@ html {
 }
 
 .navlink:hover .nav-icon {
-  opacity: 0.35;
+  color: #239ccd;
   transform: translate(0, -0.25rem);
 }
 
@@ -268,7 +269,7 @@ html {
   font-family: "League Spartan", sans-serif;
   font-size: 1.5rem;
   letter-spacing: 1px;
-  color: #bf0603;
+  color: #121417;
 }
 
 /* projects.js */
