@@ -30,6 +30,7 @@ html {
 .header-container {
   background-color: #121417;
   min-height: 100vh;
+  display: grid;
 }
 
 .about-container {
@@ -53,22 +54,21 @@ html {
 
 /* header.js */
 
-.name {
+.general {
   color: white;
   font-family: "League Spartan", sans-serif;
+  place-self: center;
+}
+
+.name {
   font-size: 4rem;
   letter-spacing: 3px;
-  margin-top: 25rem;
-  margin-left: 6rem;
 }
 
 .slogan {
-  color: white;
-  font-family: "League Spartan", sans-serif;
   font-style: italic;
   font-size: 2.5rem;
   letter-spacing: 2px;
-  margin-left: 6rem;
 }
 
 .header-content {
@@ -171,8 +171,6 @@ html {
 
 .navbar {
   white-space: nowrap;
-  display: inline-block;
-  margin: 0 auto;
   margin-left: 5rem;
 }
 
@@ -181,14 +179,12 @@ html {
   text-decoration: none;
   font-family: "Permanent Marker", cursive;
   font-size: 5rem;
-  display: inline-block;
   float: "left";
-  padding: 10px 0;
+  padding: 15px 0;
   transition: opacity 0.75s, transform 0.5s ease-in-out;
 }
 
 .nav-content {
-  display: inline-block;
   position: absolute;
   top: 3.25rem;
   right: 5rem;

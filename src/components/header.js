@@ -10,8 +10,10 @@ const Header = () => {
     <>
       <div className="header-container">
         <Navbar />
-        <h1 className="name">Hi, I'm Giuseppi</h1>
-        <h1 className="slogan">Aspiring Developer</h1>
+        <div className="general">
+          <h1 className="name">Hi, I'm Giuseppi</h1>
+          <h1 className="slogan">Aspiring Developer</h1>
+        </div>
         <ul className="header-content">
           <li>
             <SocialItem
