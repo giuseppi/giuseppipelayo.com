@@ -110,7 +110,7 @@ html {
   visibility: hidden;
   opacity: 0;
   font-size: 1.25rem;
-  transition: opacity 0.75s, visibility 0.35s, transform 0.5s;
+  transition: color 1s ease, opacity 0.75s, visibility 0.35s, transform 0.5s;
 }
 
 .header-link:hover .header-icon {
@@ -119,6 +119,7 @@ html {
 }
 
 .header-link:hover .header-description {
+  color: #239ccd;
   transform: translate(0, -1rem);
   visibility: visible;
   opacity: 1;
