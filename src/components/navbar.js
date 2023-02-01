@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
       <section className="navbar">
-        <HashLink to="/" className="home">
+        <HashLink smooth to="/" className="home">
           G
         </HashLink>
         <nav className="nav-content">

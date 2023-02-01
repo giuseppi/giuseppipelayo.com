@@ -29,7 +29,7 @@ html {
 
 .header-container {
   background-color: #121417;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .about-container {
@@ -54,7 +54,6 @@ html {
 /* header.js */
 
 .general {
-  color: white;
   font-family: "League Spartan", sans-serif;
   position: absolute;
   top: 50%;
@@ -63,11 +62,13 @@ html {
 }
 
 .name {
+  color: white;
   font-size: 4rem;
   letter-spacing: 3px;
 }
 
 .slogan {
+  color: #239ccd;
   font-style: italic;
   font-size: 2.5rem;
   letter-spacing: 2px;
@@ -185,7 +186,7 @@ html {
   font-size: 5rem;
   float: "left";
   padding: 15px 0;
-  transition: opacity 0.75s, transform 0.5s ease-in-out;
+  transition: color 1s ease;
 }
 
 .nav-content {
@@ -248,8 +249,7 @@ html {
 
 .home:hover,
 .footer-home:hover {
-  opacity: 0.5;
-  transform: skew(5deg, 5deg);
+  color: #239ccd;
 }
 
 /* about.js */
@@ -300,7 +300,7 @@ html {
   text-decoration: none;
   font-family: "Permanent Marker", cursive;
   font-size: 5rem;
-  transition: opacity 0.75s, transform 0.5s ease-in-out;
+  transition: color 1s ease;
   display: flex;
   justify-content: center;
   position: relative;
