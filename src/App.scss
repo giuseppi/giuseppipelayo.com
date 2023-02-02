@@ -281,8 +281,10 @@ html {
 
 .about-description,
 .about-image {
+  border: 5px solid black;
+  border-radius: 5px;
   min-height: 70vw;
-  min-width: 50vw;
+  min-width: 45vw;
 }
 
 .about-description {
@@ -293,7 +295,7 @@ html {
   border: 5px solid #ddd;
   border-radius: 5px;
   padding: 5px;
-  max-width: 40vw;
+  max-width: 50%;
 }
 
 /* projects.js */
