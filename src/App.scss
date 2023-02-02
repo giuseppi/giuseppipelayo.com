@@ -263,12 +263,12 @@ html {
 
 .about-heading-container h1 {
   color: #dee2e6;
-  font-size: 3.5rem;
+  font-size: 4rem;
   letter-spacing: 2px;
 }
 
 .about-heading-container h4 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   color: #239ccd;
 }
@@ -276,6 +276,20 @@ html {
 .about-me {
   display: flex;
   flex-direction: row;
+  font-size: 2rem;
+}
+
+.about-description,
+.about-image {
+  min-height: 90vw;
+  min-width: 50vw;
+}
+
+.about-description {
+  text-align: left;
+}
+
+.about-image img {
 }
 
 /* projects.js */
