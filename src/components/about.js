@@ -1,4 +1,5 @@
 import React from "react";
+import Temp from "../img/temp_pic.jpg";
 
 const About = () => {
   return (
@@ -11,7 +12,9 @@ const About = () => {
           </div>
           <div className="about-me">
             <div className="about-description">hi</div>
-            <img className="about-image" src="../images/temp_pic.jpg" alt="temp" />
+            <div className="about-image">
+              <img src={Temp} alt="temp" />
+            </div>
           </div>
         </div>
       </div>
