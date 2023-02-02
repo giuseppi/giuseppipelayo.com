@@ -255,23 +255,27 @@ html {
 
 /* about.js */
 
-.about-heading,
-.about-description {
+.about-heading-container,
+.about-me {
+  font-family: "League Spartan", sans-serif;
   text-align: center;
 }
 
-.about-heading {
-  font-family: "League Spartan", sans-serif;
+.about-heading-container h1 {
   color: #dee2e6;
   font-size: 3.5rem;
   letter-spacing: 2px;
 }
 
-.about-description {
-  font-family: "League Spartan", sans-serif;
+.about-heading-container h4 {
   font-size: 1.5rem;
   letter-spacing: 1px;
-  color: #121417;
+  color: #239ccd;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
 }
 
 /* projects.js */

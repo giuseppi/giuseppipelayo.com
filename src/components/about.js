@@ -6,10 +6,14 @@ const About = () => {
       <div className="about-container" id="about">
         <div className="about-content">
           <div className="about-heading-container">
-            <h1 className="about-heading">About Me</h1>
+            <h1>About Me</h1>
+            <h4>Get to know me!</h4>
           </div>
-          <div className="about-description-container">
-            <h4 className="about-description">Get to know me!</h4>
+          <div className="about-me">
+            <div className="about-description">hi</div>
+            <div>
+              <img src="" alt="" />
+            </div>
           </div>
         </div>
       </div>
