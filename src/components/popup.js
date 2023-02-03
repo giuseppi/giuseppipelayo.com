@@ -4,7 +4,7 @@ const Popup = (props) => {
   return props.trigger ? (
     <>
       <div className="popup-container">
-        <div className="popup-text"></div>
+        <div className="popup-text">test</div>
         <div className="popup-form">
           <button className="close-btn" onClick={() => props.setTrigger(false)}></button>
           {props.children}
