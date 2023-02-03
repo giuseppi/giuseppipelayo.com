@@ -10,7 +10,7 @@ const Popup = (props) => {
         <div className="popup-text">test</div>
         <div className="popup-form">
           <button className="close-btn" onClick={() => props.setTrigger(false)}>
-            <NavItem iconClass={"popup"} descClass={"popup"} descID={"popup-close"} icon={faXmark} description="close" />
+            <NavItem iconClass={"popup"} descClass={"popup"} descID={"popup-close"} icon={faXmark} description="home" />
           </button>
           {props.children}
         </div>
