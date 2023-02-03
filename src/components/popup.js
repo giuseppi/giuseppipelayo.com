@@ -4,12 +4,11 @@ const Popup = (props) => {
   return props.trigger ? (
     <>
       <div className="popup-container">
-        <dsiv className="popup-inner">
-          <button className="close-btn" onClick={() => props.setTrigger(false)}>
-            close
-          </button>
+        <div className="popup-text"></div>
+        <div className="popup-form">
+          <button className="close-btn" onClick={() => props.setTrigger(false)}></button>
           {props.children}
-        </dsiv>
+        </div>
       </div>
     </>
   ) : (

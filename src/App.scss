@@ -150,8 +150,9 @@ html {
   margin-top: -47.5vh; /* Negative half of height. */
   margin-left: -47.5vw; /* Negative half of width. */
   text-align: center;
-  background-color: #d3d3d3;
+  background-color: #8d99ae;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   z-index: 999;
@@ -159,18 +160,25 @@ html {
   box-shadow: 7.5px 7.5px 20px #495057;
 }
 
-.popup-inner {
-  position: relative;
-  padding: 32px;
-  width: 100%;
-  max-width: 640px;
-  background-color: #fff;
+.popup-form {
 }
 
-.popup-inner .close-btn {
+.close-btn:before {
+  content: "\2715";
+  cursor: pointer;
+  font-size: 4vw;
+  color: black;
+}
+
+.close-btn {
+  border: none;
+  background-color: #8d99ae;
+}
+
+.popup-form .close-btn {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 15px;
+  right: 30px;
 }
 
 /* navbar.js */
