@@ -12,7 +12,11 @@ const About = () => {
           </div>
           <div className="about-me">
             <div className="about-description">
-              <p>hi</p>
+              <p>
+                Hello world! I am Giuseppi Pelayo, an aspiring web developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+                iste est molestiae odit, reprehenderit numquam magni sunt libero at recusandae necessitatibus iusto mollitia quibusdam omnis minus
+                architecto aspernatur suscipit. Beatae? Rerum asperiores ratione accusantium voluptates repellendus, harum perferendis provident
+              </p>
             </div>
             <div className="about-image">
               <img src={Temp} alt="temp" />
