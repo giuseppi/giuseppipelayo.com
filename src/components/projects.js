@@ -6,8 +6,6 @@ const Projects = () => {
       <div className="project-content">
         <div className="projects-heading-container">
           <h1 className="projects-heading">Projects</h1>
-        </div>
-        <div className="projects-description-container">
           <h4 className="projects-description">See what I've been working on.</h4>
         </div>
       </div>
