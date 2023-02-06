@@ -29,8 +29,8 @@ const Header = () => {
             <SocialItem mediaType={"github"} location={"header"} link={"https://github.com/giuseppi"} icon={faGithub} description={"Github"} />
           </li>
         </ul>
-        <div>
-          <HashLink smooth to="#about" class="arrow-container">
+        <div className="arrow-about">
+          <HashLink smooth to="#about" class="arrow-link">
             <div class="arrow"></div>
             <div class="arrow"></div>
             <div class="arrow"></div>

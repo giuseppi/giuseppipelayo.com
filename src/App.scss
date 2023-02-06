@@ -139,7 +139,7 @@ html {
   left: -1rem;
 }
 
-// arrow
+// About Arrow
 
 $total-arrows: 3;
 $arrow-line-length: 50px;
@@ -150,19 +150,16 @@ $arrow-line-width: 4px;
   transform: translate(-50%, -50%) rotateZ($rot);
 }
 
-// base
-html {
-  height: 100%;
-}
-body {
-  background: #000;
-  position: relative;
-  height: 100%;
+// arrows
+
+.arrow-about {
+  position: absolute;
+  top: 0;
+  left: 50vw;
 }
 
-// arrows
-.arrow-container {
-  position: fixed;
+.arrow-link {
+  position: absolute;
   display: block;
   width: 100px;
   height: 100px;
