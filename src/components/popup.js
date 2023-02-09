@@ -8,7 +8,7 @@ const Popup = ({ setButtonPopup }) => {
     <>
       <div className="popup-container" onClick={setButtonPopup.bind(this, false)}>
         {/* Actual Popup Box */}
-        <div className="popup-info">
+        <div className="popup-info" onClick={(e) => e.stopPropagation()}>
           {/* Text */}
           <div className="popup-text">test</div>
           {/* Mail form */}
