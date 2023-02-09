@@ -228,13 +228,8 @@ $arrow-line-width: 4px;
 }
 
 .popup-info {
-  position: relative;
   width: 80vw;
   height: 70vh;
-  top: 0%;
-  left: 50%;
-  margin-top: -35vh; /* Negative half of height. */
-  margin-left: -40vw; /* Negative half of width. */
   text-align: center;
   display: flex;
   flex-direction: row;
