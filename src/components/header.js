@@ -12,11 +12,14 @@ const Header = () => {
       <div className="header-container">
         <Navbar />
         <div className="general">
+          {/* Text */}
           <h1 className="name">Hi, I'm Giuseppi</h1>
           <h1 className="slogan">Aspiring Developer</h1>
         </div>
+        {/* Social Media */}
         <ul className="header-content">
           <li>
+            {/* Linkedin */}
             <SocialItem
               mediaType={"linkedin"}
               location={"header"}
@@ -25,10 +28,12 @@ const Header = () => {
               description={"LinkedIn"}
             />
           </li>
+          {/* Github */}
           <li>
             <SocialItem mediaType={"github"} location={"header"} link={"https://github.com/giuseppi"} icon={faGithub} description={"Github"} />
           </li>
         </ul>
+        {/* Arrow */}
         <div className="arrow-about">
           <HashLink smooth to="#about" class="arrow-link">
             <div class="arrow"></div>

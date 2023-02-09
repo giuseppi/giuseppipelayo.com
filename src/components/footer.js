@@ -18,6 +18,7 @@ const Footer = () => {
           G
         </HashLink>
         <div className="social-content">
+          {/* Linkedin */}
           <SocialItem
             mediaType={"linkedin"}
             location={"footer"}
@@ -25,11 +26,13 @@ const Footer = () => {
             icon={faLinkedinIn}
             description={"LinkedIn"}
           />
+          {/* Github */}
           <SocialItem mediaType={"github"} location={"footer"} link={"https://github.com/giuseppi"} icon={faGithub} description={"Github"} />
-          <button onClick={() => setButtonPopup(true)} className="footer-link" id="footer-contact-btn">
+          {/* Contact */}
+          <button onClick={() => setButtonPopup.bind(this, true)} className="footer-link" id="footer-contact-btn">
             <NavItem iconClass={"footer"} descClass={"footer"} descID={"footer-contact"} icon={faEnvelope} description={"Contact"} />
           </button>
-          <Popup trigger={buttonPopup} setTrigger={setButtonPopup} />
+          {buttonPopup && <Popup setButtonPopup={setButtonPopup} />}
         </div>
       </div>
     </>

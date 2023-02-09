@@ -255,7 +255,7 @@ $arrow-line-width: 4px;
 }
 
 .popup-icon {
-  transition: color 0.75s ease, transform 0.75s;
+  transition: color 0.25s ease, transform 0.25s;
 }
 
 .popup-description {
@@ -267,7 +267,7 @@ $arrow-line-width: 4px;
   visibility: hidden;
   opacity: 0;
   font-size: 1.5rem;
-  transition: color 0.75s ease, opacity 0.75s, visibility 0.5s, transform 0.5s;
+  transition: color 0.25s ease, opacity 0.25s, visibility 0.25s, transform 0.25s;
 }
 
 .close-btn:hover .popup-icon {
