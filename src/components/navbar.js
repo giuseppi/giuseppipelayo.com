@@ -25,7 +25,7 @@ const Navbar = () => {
             <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-projects"} icon={faSuitcase} description="projects" />
           </HashLink>
           {/* Contact */}
-          <button onClick={() => setButtonPopup.bind(this, true)} className="navlink" activeclassname="active" id="header-contact-btn">
+          <button onClick={setButtonPopup.bind(this, true)} className="navlink" activeclassname="active" id="header-contact-btn">
             <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-contact"} icon={faEnvelope} description="contact" />
           </button>
           {buttonPopup && <Popup setButtonPopup={setButtonPopup} />}

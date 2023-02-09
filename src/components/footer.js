@@ -29,7 +29,7 @@ const Footer = () => {
           {/* Github */}
           <SocialItem mediaType={"github"} location={"footer"} link={"https://github.com/giuseppi"} icon={faGithub} description={"Github"} />
           {/* Contact */}
-          <button onClick={() => setButtonPopup.bind(this, true)} className="footer-link" id="footer-contact-btn">
+          <button onClick={setButtonPopup.bind(this, true)} className="footer-link" id="footer-contact-btn">
             <NavItem iconClass={"footer"} descClass={"footer"} descID={"footer-contact"} icon={faEnvelope} description={"Contact"} />
           </button>
           {buttonPopup && <Popup setButtonPopup={setButtonPopup} />}
