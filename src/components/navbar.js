@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavItem from "./navitem.js";
+import { motion } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 
 // FontAwesome
@@ -25,9 +26,15 @@ const Navbar = () => {
             <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-projects"} icon={faSuitcase} description="projects" />
           </HashLink>
           {/* Contact */}
-          <button onClick={setButtonPopup.bind(this, true)} className="navlink" activeclassname="active" id="header-contact-btn">
+          <motion.button
+            whileHover={{ scale: 2 }}
+            whileTap={{ scale: 0.5 }}
+            onClick={setButtonPopup.bind(this, true)}
+            className="navlink"
+            activeclassname="active"
+            id="header-contact-btn">
             <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-contact"} icon={faEnvelope} description="contact" />
-          </button>
+          </motion.button>
           {buttonPopup && <Popup setButtonPopup={setButtonPopup} />}
           {/* Dark/Light Mode */}
           <HashLink className="navlink" exact="true" activeclassname="active" to="/">
