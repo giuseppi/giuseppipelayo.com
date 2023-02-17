@@ -1,6 +1,6 @@
 import React from "react";
 import NavItem from "./navitem.js";
-import { motion, AnimatePresence, isMotionComponent } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 
 // FontAwesome
@@ -8,22 +8,28 @@ import { faCircleHalfStroke, faEnvelope, faSuitcase, faUser } from "@fortawesome
 import Popup from "./popup.js";
 
 const Navbar = ({ modalOpen, closePopup, openPopup }) => {
-  const MotionHashLink = motion(HashLink);
   return (
     <>
       <section className="navbar">
-        <MotionHashLink whileHover={{ scale: 2 }} whileTap={{ scale: 0.9 }} smooth to="/" className="home">
-          G
-        </MotionHashLink>
+        {/* Logo */}
+        <motion.div className="button-wrapper">
+          <HashLink smooth to="/" className="home">
+            G
+          </HashLink>
+        </motion.div>
         <nav className="nav-content">
           {/* About */}
-          <MotionHashLink whileTap={{ scale: 0.9 }} className="navlink" exact="true" activeclassname="active" smooth to="#about">
-            <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-about"} icon={faUser} description="about" />
-          </MotionHashLink>
+          <motion.div className="button-wrapper">
+            <HashLink whileTap={{ scale: 0.9 }} className="navlink" exact="true" activeclassname="active" smooth to="#about">
+              <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-about"} icon={faUser} description="about" />
+            </HashLink>
+          </motion.div>
           {/* Projects */}
-          <MotionHashLink whileTap={{ scale: 0.9 }} className="navlink" exact="true" activeclassname="active" smooth to="#projects">
-            <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-projects"} icon={faSuitcase} description="projects" />
-          </MotionHashLink>
+          <motion.div className="button-wrapper">
+            <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#projects">
+              <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-projects"} icon={faSuitcase} description="projects" />
+            </HashLink>
+          </motion.div>
           {/* Contact */}
           <motion.button
             whileTap={{ scale: 0.9 }}
@@ -40,11 +46,12 @@ const Navbar = ({ modalOpen, closePopup, openPopup }) => {
             onExitComplete={() => null}>
             {modalOpen && <Popup modalOpen={modalOpen} handleClose={closePopup} />}
           </AnimatePresence>
-
           {/* Dark/Light Mode */}
-          <MotionHashLink whileTap={{ scale: 0.9 }} className="navlink" exact="true" activeclassname="active" to="/">
-            <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-darkmode"} icon={faCircleHalfStroke} description="dark" />
-          </MotionHashLink>
+          <motion.div className="button-wrapper">
+            <HashLink className="navlink" exact="true" activeclassname="active" to="/">
+              <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-darkmode"} icon={faCircleHalfStroke} description="dark" />
+            </HashLink>
+          </motion.div>
         </nav>
       </section>
     </>
