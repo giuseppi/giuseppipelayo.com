@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavItem from "./navitem.js";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 
 // FontAwesome
@@ -8,7 +8,10 @@ import { faCircleHalfStroke, faEnvelope, faSuitcase, faUser } from "@fortawesome
 import Popup from "./popup.js";
 
 const Navbar = () => {
-  const [buttonPopup, setButtonPopup] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const closePopup = () => setModalOpen(false);
+  const openPopup = () => setModalOpen(true);
 
   return (
     <>
@@ -28,13 +31,20 @@ const Navbar = () => {
           {/* Contact */}
           <motion.button
             whileTap={{ scale: 0.9 }}
-            onClick={setButtonPopup.bind(this, true)}
+            onClick={() => (modalOpen ? closePopup() : openPopup())}
             className="navlink"
             activeclassname="active"
             id="header-contact-btn">
             <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-contact"} icon={faEnvelope} description="contact" />
           </motion.button>
-          {buttonPopup && <Popup setButtonPopup={setButtonPopup} />}
+          <AnimatePresence
+            // Disable any initial animations on children that
+            // are present when component is first rendered
+            initial={false}
+            onExitComplete={() => null}>
+            {modalOpen && <Popup modalOpen={modalOpen} handleClose={closePopup} />}
+          </AnimatePresence>
+
           {/* Dark/Light Mode */}
           <HashLink className="navlink" exact="true" activeclassname="active" to="/">
             <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-darkmode"} icon={faCircleHalfStroke} description="dark" />
