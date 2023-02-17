@@ -35,10 +35,10 @@ const Header = ({ modalOpen, closePopup, openPopup }) => {
         </ul>
         {/* Arrow */}
         <div className="arrow-about">
-          <HashLink smooth to="#about" class="arrow-link">
-            <div class="arrow"></div>
-            <div class="arrow"></div>
-            <div class="arrow"></div>
+          <HashLink smooth to="#about" className="arrow-link">
+            <div className="arrow"></div>
+            <div className="arrow"></div>
+            <div className="arrow"></div>
           </HashLink>
         </div>
       </div>

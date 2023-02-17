@@ -1,6 +1,6 @@
 import React from "react";
 import NavItem from "./navitem.js";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, isMotionComponent } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 
 // FontAwesome
@@ -8,21 +8,22 @@ import { faCircleHalfStroke, faEnvelope, faSuitcase, faUser } from "@fortawesome
 import Popup from "./popup.js";
 
 const Navbar = ({ modalOpen, closePopup, openPopup }) => {
+  const MotionHashLink = motion(HashLink);
   return (
     <>
       <section className="navbar">
-        <HashLink smooth to="/" className="home">
+        <MotionHashLink whileHover={{ scale: 2 }} whileTap={{ scale: 0.9 }} smooth to="/" className="home">
           G
-        </HashLink>
+        </MotionHashLink>
         <nav className="nav-content">
           {/* About */}
-          <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#about">
+          <MotionHashLink whileTap={{ scale: 0.9 }} className="navlink" exact="true" activeclassname="active" smooth to="#about">
             <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-about"} icon={faUser} description="about" />
-          </HashLink>
+          </MotionHashLink>
           {/* Projects */}
-          <HashLink whileTap={{ scale: 0.9 }} className="navlink" exact="true" activeclassname="active" smooth to="#projects">
+          <MotionHashLink whileTap={{ scale: 0.9 }} className="navlink" exact="true" activeclassname="active" smooth to="#projects">
             <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-projects"} icon={faSuitcase} description="projects" />
-          </HashLink>
+          </MotionHashLink>
           {/* Contact */}
           <motion.button
             whileTap={{ scale: 0.9 }}
@@ -41,9 +42,9 @@ const Navbar = ({ modalOpen, closePopup, openPopup }) => {
           </AnimatePresence>
 
           {/* Dark/Light Mode */}
-          <HashLink className="navlink" exact="true" activeclassname="active" to="/">
+          <MotionHashLink whileTap={{ scale: 0.9 }} className="navlink" exact="true" activeclassname="active" to="/">
             <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-darkmode"} icon={faCircleHalfStroke} description="dark" />
-          </HashLink>
+          </MotionHashLink>
         </nav>
       </section>
     </>

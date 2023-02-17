@@ -23,10 +23,10 @@ const About = () => {
           </div>
         </div>
         <div className="arrow-projects">
-          <HashLink smooth to="#projects" class="arrow-link">
-            <div class="arrow"></div>
-            <div class="arrow"></div>
-            <div class="arrow"></div>
+          <HashLink smooth to="#projects" className="arrow-link">
+            <div className="arrow"></div>
+            <div className="arrow"></div>
+            <div className="arrow"></div>
           </HashLink>
         </div>
       </div>
