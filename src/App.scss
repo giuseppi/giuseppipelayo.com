@@ -214,17 +214,6 @@ $arrow-line-width: 4px;
 
 /* popup.js */
 
-@keyframes dropTop {
-  0% {
-    transform: translateY(-100%) scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%) scale(1);
-    opacity: 1;
-  }
-}
-
 .popup-container {
   position: fixed;
   top: 0;
@@ -236,9 +225,6 @@ $arrow-line-width: 4px;
   justify-content: center;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.85);
-  animation-name: dropTop;
-  animation-direction: alternate;
-  animation-duration: 0.3s;
 }
 
 .popup-info {

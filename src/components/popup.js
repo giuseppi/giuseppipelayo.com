@@ -1,12 +1,18 @@
 import React from "react";
 import NavItem from "./navitem.js";
-
+import { AnimatePresence, motion } from "framer-motion";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Popup = ({ setButtonPopup }) => {
   return (
-    <>
-      <div className="popup-container" onClick={setButtonPopup.bind(this, false)}>
+    <AnimatePresence>
+      <motion.div
+        key="modal"
+        initial={{ y: -1000, scale: 0, opacity: 0 }}
+        animate={{ y: 0, scale: 1, opacity: 1 }}
+        exit={{ y: -100, scale: 1, opacity: 1 }}
+        className="popup-container"
+        onClick={setButtonPopup.bind(this, false)}>
         {/* Actual Popup Box */}
         <div className="popup-info" onClick={(e) => e.stopPropagation()}>
           {/* Text */}
@@ -18,8 +24,8 @@ const Popup = ({ setButtonPopup }) => {
             </button>
           </div>
         </div>
-      </div>
-    </>
+      </motion.div>
+    </AnimatePresence>
   );
 };
 

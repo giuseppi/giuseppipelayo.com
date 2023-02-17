@@ -22,13 +22,12 @@ const Navbar = () => {
             <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-about"} icon={faUser} description="about" />
           </HashLink>
           {/* Projects */}
-          <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#projects">
+          <HashLink whileTap={{ scale: 0.9 }} className="navlink" exact="true" activeclassname="active" smooth to="#projects">
             <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-projects"} icon={faSuitcase} description="projects" />
           </HashLink>
           {/* Contact */}
           <motion.button
-            whileHover={{ scale: 2 }}
-            whileTap={{ scale: 0.5 }}
+            whileTap={{ scale: 0.9 }}
             onClick={setButtonPopup.bind(this, true)}
             className="navlink"
             activeclassname="active"
