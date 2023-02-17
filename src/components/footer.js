@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { motion, AnimatePresence } from "framer-motion";
 import SocialItem from "./socialitem.js";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import NavItem from "./navitem.js";
 import { motion, AnimatePresence } from "framer-motion";
 import { HashLink } from "react-router-hash-link";

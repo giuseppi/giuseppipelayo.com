@@ -1,7 +1,7 @@
 import React from "react";
-import { HashLink } from "react-router-hash-link";
 import Navbar from "./navbar";
 import SocialItem from "./socialitem.js";
+import { HashLink } from "react-router-hash-link";
 
 // FontAwesome
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
