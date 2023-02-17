@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
+import { motion, AnimatePresence } from "framer-motion";
 import SocialItem from "./socialitem.js";
 import NavItem from "./navitem.js";
 import Popup from "./popup";
@@ -9,7 +10,10 @@ import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
-  const [buttonPopup, setButtonPopup] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const closePopup = () => setModalOpen(false);
+  const openPopup = () => setModalOpen(true);
 
   return (
     <>
@@ -29,10 +33,20 @@ const Footer = () => {
           {/* Github */}
           <SocialItem mediaType={"github"} location={"footer"} link={"https://github.com/giuseppi"} icon={faGithub} description={"Github"} />
           {/* Contact */}
-          <button onClick={setButtonPopup.bind(this, true)} className="footer-link" id="footer-contact-btn">
+          <motion.button
+            whileTap={{ scale: 0.9 }}
+            onClick={() => (modalOpen ? closePopup() : openPopup())}
+            className="footer-link"
+            id="footer-contact-btn">
             <NavItem iconClass={"footer"} descClass={"footer"} descID={"footer-contact"} icon={faEnvelope} description={"Contact"} />
-          </button>
-          {buttonPopup && <Popup setButtonPopup={setButtonPopup} />}
+          </motion.button>
+          <AnimatePresence
+            // Disable any initial animations on children that
+            // are present when component is first rendered
+            initial={false}
+            onExitComplete={() => null}>
+            {modalOpen && <Popup modalOpen={modalOpen} handleClose={closePopup} />}
+          </AnimatePresence>
         </div>
       </div>
     </>
