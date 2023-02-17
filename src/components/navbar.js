@@ -7,12 +7,7 @@ import { HashLink } from "react-router-hash-link";
 import { faCircleHalfStroke, faEnvelope, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
 import Popup from "./popup.js";
 
-const Navbar = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const closePopup = () => setModalOpen(false);
-  const openPopup = () => setModalOpen(true);
-
+const Navbar = ({ modalOpen, closePopup, openPopup }) => {
   return (
     <>
       <section className="navbar">

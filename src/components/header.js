@@ -6,11 +6,11 @@ import SocialItem from "./socialitem.js";
 // FontAwesome
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
-const Header = () => {
+const Header = ({ modalOpen, closePopup, openPopup }) => {
   return (
     <>
       <div className="header-container">
-        <Navbar />
+        <Navbar modalOpen={modalOpen} closePopup={closePopup} openPopup={openPopup} />
         <div className="general">
           {/* Text */}
           <h1 className="name">Hi, I'm Giuseppi</h1>

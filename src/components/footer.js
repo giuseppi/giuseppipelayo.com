@@ -9,12 +9,7 @@ import Popup from "./popup";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const Footer = () => {
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const closePopup = () => setModalOpen(false);
-  const openPopup = () => setModalOpen(true);
-
+const Footer = ({ modalOpen, closePopup, openPopup }) => {
   return (
     <>
       <div className="footer-container">
