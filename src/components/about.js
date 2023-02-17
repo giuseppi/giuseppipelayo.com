@@ -1,6 +1,6 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
-import Temp from "../img/temp_pic.jpg";
+import Temp from "../assets/img/temp_pic.jpg";
 
 const About = () => {
   return (
