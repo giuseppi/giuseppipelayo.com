@@ -19,13 +19,13 @@ const Navbar = ({ modalOpen, closePopup, openPopup }) => {
         </motion.div>
         <nav className="nav-content">
           {/* About */}
-          <motion.div className="button-wrapper">
-            <HashLink whileTap={{ scale: 0.9 }} className="navlink" exact="true" activeclassname="active" smooth to="#about">
+          <motion.div whileTap={{ scale: 0.9 }} className="button-wrapper">
+            <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#about">
               <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-about"} icon={faUser} description="about" />
             </HashLink>
           </motion.div>
           {/* Projects */}
-          <motion.div className="button-wrapper">
+          <motion.div className="button-wrapper" whileTap={{ scale: 0.9 }}>
             <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#projects">
               <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-projects"} icon={faSuitcase} description="projects" />
             </HashLink>
@@ -47,7 +47,7 @@ const Navbar = ({ modalOpen, closePopup, openPopup }) => {
             {modalOpen && <Popup modalOpen={modalOpen} handleClose={closePopup} />}
           </AnimatePresence>
           {/* Dark/Light Mode */}
-          <motion.div className="button-wrapper">
+          <motion.div className="button-wrapper" whileTap={{ scale: 0.9 }}>
             <HashLink className="navlink" exact="true" activeclassname="active" to="/">
               <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-darkmode"} icon={faCircleHalfStroke} description="dark" />
             </HashLink>
