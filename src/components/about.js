@@ -7,7 +7,7 @@ import Temp from "../assets/img/temp_pic.jpg";
 const About = () => {
   return (
     <>
-      <div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="about-container" id="about">
+      <div className="about-container" id="about">
         {/* Header */}
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="about-heading-container">
           <h1>About Me</h1>
