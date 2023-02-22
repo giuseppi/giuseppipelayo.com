@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "./navbar";
 import { motion } from "framer-motion";
 
-import SocialItem from "./socialitem.js";
 import Arrow from "./arrow.js";
+import SocialItem from "./socialitem.js";
 
 // FontAwesome
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
