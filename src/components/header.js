@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./navbar";
+import { motion } from "framer-motion";
 import SocialItem from "./socialitem.js";
 import { HashLink } from "react-router-hash-link";
 
@@ -9,15 +10,15 @@ import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 const Header = ({ modalOpen, closePopup, openPopup }) => {
   return (
     <>
-      <div className="header-container">
+      <motion.div className="header-container">
         <Navbar modalOpen={modalOpen} closePopup={closePopup} openPopup={openPopup} />
-        <div className="general">
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="general">
           {/* Text */}
           <h1 className="name">Hi, I'm Giuseppi</h1>
           <h1 className="slogan">Aspiring Developer</h1>
-        </div>
+        </motion.div>
         {/* Social Media */}
-        <ul className="header-content">
+        <motion.ul initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="header-content">
           <li>
             {/* Linkedin */}
             <SocialItem
@@ -32,16 +33,16 @@ const Header = ({ modalOpen, closePopup, openPopup }) => {
           <li>
             <SocialItem mediaType={"github"} location={"header"} link={"https://github.com/giuseppi"} icon={faGithub} description={"Github"} />
           </li>
-        </ul>
+        </motion.ul>
         {/* Arrow */}
-        <div className="arrow-about">
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="arrow-about">
           <HashLink smooth to="#about" className="arrow-link">
             <div className="arrow"></div>
             <div className="arrow"></div>
             <div className="arrow"></div>
           </HashLink>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 };

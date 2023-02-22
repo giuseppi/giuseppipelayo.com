@@ -12,12 +12,12 @@ const Navbar = ({ modalOpen, closePopup, openPopup }) => {
     <>
       <section className="navbar">
         {/* Logo */}
-        <motion.div className="button-wrapper">
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="button-wrapper">
           <HashLink smooth to="/" className="home">
             G
           </HashLink>
         </motion.div>
-        <nav className="nav-content">
+        <motion.nav initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="nav-content">
           {/* About */}
           <motion.div whileTap={{ scale: 0.9 }} className="button-wrapper">
             <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#about">
@@ -52,7 +52,7 @@ const Navbar = ({ modalOpen, closePopup, openPopup }) => {
               <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-darkmode"} icon={faCircleHalfStroke} description="dark" />
             </HashLink>
           </motion.div>
-        </nav>
+        </motion.nav>
       </section>
     </>
   );
