@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "./navbar";
 import { motion } from "framer-motion";
+
 import SocialItem from "./socialitem.js";
-import { HashLink } from "react-router-hash-link";
+import Arrow from "./arrow.js";
 
 // FontAwesome
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -10,7 +11,7 @@ import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 const Header = ({ modalOpen, closePopup, openPopup }) => {
   return (
     <>
-      <motion.div className="header-container">
+      <div className="header-container">
         <Navbar modalOpen={modalOpen} closePopup={closePopup} openPopup={openPopup} />
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="general">
           {/* Text */}
@@ -35,14 +36,10 @@ const Header = ({ modalOpen, closePopup, openPopup }) => {
           </li>
         </motion.ul>
         {/* Arrow */}
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="arrow-about">
-          <HashLink smooth to="#about" className="arrow-link">
-            <div className="arrow"></div>
-            <div className="arrow"></div>
-            <div className="arrow"></div>
-          </HashLink>
+        <motion.div initial={{ opacity: 1 }} whileInView={{ opacity: 0 }} className="arrow-about">
+          <Arrow />
         </motion.div>
-      </motion.div>
+      </div>
     </>
   );
 };

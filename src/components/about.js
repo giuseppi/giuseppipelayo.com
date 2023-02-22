@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { HashLink } from "react-router-hash-link";
+
+import Arrow from "./arrow.js";
 import Temp from "../assets/img/temp_pic.jpg";
 
 const About = () => {
@@ -24,11 +25,7 @@ const About = () => {
           </motion.div>
         </div>
         <motion.div initial={{ opacity: 1 }} whileInView={{ opacity: 0 }} className="arrow-projects">
-          <HashLink smooth to="#projects" className="arrow-link">
-            <div className="arrow"></div>
-            <div className="arrow"></div>
-            <div className="arrow"></div>
-          </HashLink>
+          <Arrow />
         </motion.div>
       </div>
     </>
