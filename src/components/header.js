@@ -36,9 +36,7 @@ const Header = ({ modalOpen, closePopup, openPopup }) => {
           </li>
         </motion.ul>
         {/* Arrow */}
-        <motion.div initial={{ opacity: 1 }} whileInView={{ opacity: 0 }} className="arrow-about">
-          <Arrow />
-        </motion.div>
+        <Arrow arrowClass={"arrow-about"} />
       </div>
     </>
   );

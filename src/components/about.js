@@ -28,9 +28,7 @@ const About = () => {
           </motion.div>
         </div>
         {/* Arrow */}
-        <motion.div initial={{ opacity: 1 }} whileInView={{ opacity: 0 }} className="arrow-projects">
-          <Arrow />
-        </motion.div>
+        <Arrow arrowClass={"arrow-projects"} />
       </div>
     </>
   );
