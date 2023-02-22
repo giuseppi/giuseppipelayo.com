@@ -12,11 +12,15 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Footer = ({ modalOpen, closePopup, openPopup }) => {
   return (
     <>
-      <div className="footer-container">
-        <HashLink smooth to="#" className="footer-home">
-          G
-        </HashLink>
-        <div className="social-content">
+      <div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="footer-container">
+        {/* Back to Top */}
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+          <HashLink smooth to="#" className="footer-home">
+            G
+          </HashLink>
+        </motion.div>
+        {/* Socials */}
+        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="social-content">
           {/* Linkedin */}
           <SocialItem
             mediaType={"linkedin"}
@@ -42,7 +46,7 @@ const Footer = ({ modalOpen, closePopup, openPopup }) => {
             onExitComplete={() => null}>
             {modalOpen && <Popup modalOpen={modalOpen} handleClose={closePopup} />}
           </AnimatePresence>
-        </div>
+        </motion.div>
       </div>
     </>
   );
