@@ -36,7 +36,7 @@ const Popup = ({ handleClose }) => {
         <div className="popup-form">
           <motion.button
             className="close-btn"
-            whileHover={{ color: "#239ccd", transform: "translate(0, -0.25rem)" }}
+            whileHover={{ color: "darkgrey", transform: "translate(0, -0.25rem)" }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", duration: ".25s" }}
             onClick={handleClose}>
