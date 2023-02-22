@@ -137,13 +137,11 @@ html {
   left: -1rem;
 }
 
-// About Arrow
-
 $total-arrows: 3;
 $arrow-line-length: 50px;
 $arrow-line-width: 4px;
 
-// arrow animtion + choose direction
+// arrow animation + choose direction
 @mixin arrow-transitions($rot: 0deg) {
   transform: translate(-50%, -50%) rotateZ($rot);
 }
@@ -210,6 +208,13 @@ $arrow-line-width: 4px;
       opacity: 0.3 * $i;
       top: 15 + (100% * $i/5);
     }
+  }
+}
+
+.arrow-about .arrow {
+  &:before,
+  &:after {
+    background: #239ccd;
   }
 }
 
