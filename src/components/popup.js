@@ -1,5 +1,4 @@
 import React from "react";
-import NavItem from "./navitem.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -37,7 +36,7 @@ const Popup = ({ handleClose }) => {
           <form>
             <ul>
               <li className="half">
-                <input type="text" name="name" placeholder="name" required />
+                <motion.input whileFocus={{ transform: "translate(0, -0.25rem)" }} type="text" name="name" placeholder="name" required />
               </li>
               <li className="half">
                 <input type="text" name="email" placeholder="email" required />
@@ -60,7 +59,7 @@ const Popup = ({ handleClose }) => {
           className="close-btn"
           whileHover={{ color: "darkgrey", transform: "translate(0, -0.25rem)" }}
           whileTap={{ scale: 0.9 }}
-          transition={{ type: "spring", duration: ".25s" }}
+          transition={{ type: "spring" }}
           onClick={handleClose}>
           <FontAwesomeIcon icon={faXmark} className={"popup-icon"} />
         </motion.button>
