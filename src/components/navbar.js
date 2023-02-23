@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import DownloadLink from "react-download-link";
 import { HashLink } from "react-router-hash-link";
 
+import Resume from "../assets/GiuseppiPelayo_Resume.pdf";
+
 // FontAwesome
 import { faCircleHalfStroke, faEnvelope, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
 import Popup from "./popup.js";
@@ -21,14 +23,9 @@ const Navbar = ({ modalOpen, closePopup, openPopup }) => {
         <motion.nav initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="nav-content">
           {/* Resume */}
           <motion.div whileTap={{ scale: 0.9 }} className="button-wrapper">
-            <DownloadLink
-              filename="myfile.txt"
-              exportFile={() => Promise.resolve("My cached data")}
-              className="navlink"
-              exact="true"
-              activeclassname="active">
+            <a download href={Resume} className="navlink" exact="true" activeclassname="active">
               <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-resume"} icon={faUser} description="resume" />
-            </DownloadLink>
+            </a>
           </motion.div>
           {/* Projects */}
           <motion.div className="button-wrapper" whileTap={{ scale: 0.9 }}>
