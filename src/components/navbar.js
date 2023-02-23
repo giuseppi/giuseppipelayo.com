@@ -18,10 +18,10 @@ const Navbar = ({ modalOpen, closePopup, openPopup }) => {
           </HashLink>
         </motion.div>
         <motion.nav initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="nav-content">
-          {/* About */}
+          {/* Resume */}
           <motion.div whileTap={{ scale: 0.9 }} className="button-wrapper">
-            <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#about">
-              <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-about"} icon={faUser} description="about" />
+            <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#resume">
+              <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-resume"} icon={faUser} description="resume" />
             </HashLink>
           </motion.div>
           {/* Projects */}

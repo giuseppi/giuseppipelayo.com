@@ -34,13 +34,6 @@ html {
   max-height: 100vh;
 }
 
-.about-container {
-  position: relative;
-  background-color: #6c757d;
-  min-height: 100vh;
-  max-height: 100vh;
-}
-
 .projects-container {
   background-color: white;
   min-height: 100vh;
@@ -152,12 +145,6 @@ $arrow-line-width: 4px;
 
 // arrows
 
-.arrow-about {
-  position: absolute;
-  top: 94vh;
-  left: 50vw;
-}
-
 .arrow-projects {
   position: absolute;
   top: 94vh;
@@ -214,7 +201,7 @@ $arrow-line-width: 4px;
   }
 }
 
-.arrow-about .arrow {
+.arrow-projects .arrow {
   &:before,
   &:after {
     background: #239ccd;
@@ -331,8 +318,8 @@ $arrow-line-width: 4px;
   position: relative;
 }
 
-#nav-about {
-  left: -0.9rem;
+#nav-resume {
+  left: -1.23rem;
 }
 
 #nav-contact {
@@ -377,57 +364,6 @@ $arrow-line-width: 4px;
 .home:hover,
 .footer-home:hover {
   color: #239ccd;
-}
-
-/* about.js */
-
-.about-heading-container {
-  margin-top: 5vh;
-}
-
-.about-heading-container,
-.about-me {
-  font-family: "League Spartan", sans-serif;
-  text-align: center;
-}
-
-.about-heading-container h1 {
-  color: #dee2e6;
-  font-size: 4rem;
-  letter-spacing: 2px;
-}
-
-.about-heading-container h4 {
-  font-size: 2.5rem;
-  letter-spacing: 1px;
-  color: #239ccd;
-}
-
-.about-me {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 2rem;
-  max-height: 50vh;
-}
-
-.about-description,
-.about-image {
-  border: 5px solid #121417;
-  border-radius: 5px;
-}
-
-.about-description {
-  text-align: left;
-  max-width: 50vw;
-}
-
-.about-image img {
-  border: 5px solid #ddd;
-  border-radius: 5px;
-  padding: 5px;
-  max-width: 25vw;
 }
 
 /* projects.js */

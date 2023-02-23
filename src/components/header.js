@@ -36,7 +36,7 @@ const Header = ({ modalOpen, closePopup, openPopup }) => {
           </li>
         </motion.ul>
         {/* Arrow */}
-        <Arrow arrowClass={"arrow-about"} />
+        <Arrow arrowClass={"arrow-projects"} />
       </div>
     </>
   );
