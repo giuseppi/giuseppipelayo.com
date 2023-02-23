@@ -1,6 +1,7 @@
 import React from "react";
 import NavItem from "./navitem.js";
 import { motion, AnimatePresence } from "framer-motion";
+import DownloadLink from "react-download-link";
 import { HashLink } from "react-router-hash-link";
 
 // FontAwesome
@@ -20,9 +21,14 @@ const Navbar = ({ modalOpen, closePopup, openPopup }) => {
         <motion.nav initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="nav-content">
           {/* Resume */}
           <motion.div whileTap={{ scale: 0.9 }} className="button-wrapper">
-            <HashLink className="navlink" exact="true" activeclassname="active" smooth to="#resume">
+            <DownloadLink
+              filename="myfile.txt"
+              exportFile={() => Promise.resolve("My cached data")}
+              className="navlink"
+              exact="true"
+              activeclassname="active">
               <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-resume"} icon={faUser} description="resume" />
-            </HashLink>
+            </DownloadLink>
           </motion.div>
           {/* Projects */}
           <motion.div className="button-wrapper" whileTap={{ scale: 0.9 }}>
