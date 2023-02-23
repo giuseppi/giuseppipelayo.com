@@ -34,15 +34,36 @@ const Popup = ({ handleClose }) => {
         <div className="popup-text">test</div>
         {/* Mail form */}
         <div className="popup-form">
-          <motion.button
-            className="close-btn"
-            whileHover={{ color: "darkgrey", transform: "translate(0, -0.25rem)" }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", duration: ".25s" }}
-            onClick={handleClose}>
-            <FontAwesomeIcon icon={faXmark} className={"popup-icon"} />
-          </motion.button>
+          <form>
+            <ul>
+              <li className="half">
+                <input type="text" name="name" placeholder="name" required />
+              </li>
+              <li className="half">
+                <input type="text" name="email" placeholder="email" required />
+              </li>
+              <li>
+                <input type="text" name="subject" placeholder="subject" required />
+              </li>
+              <li>
+                <textarea type="text" name="message" placeholder="message" required />
+              </li>
+              <li>
+                <motion.button type="submit" className="form-button" value="SEND">
+                  SEND
+                </motion.button>
+              </li>
+            </ul>
+          </form>
         </div>
+        <motion.button
+          className="close-btn"
+          whileHover={{ color: "darkgrey", transform: "translate(0, -0.25rem)" }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", duration: ".25s" }}
+          onClick={handleClose}>
+          <FontAwesomeIcon icon={faXmark} className={"popup-icon"} />
+        </motion.button>
       </div>
     </motion.div>
   );

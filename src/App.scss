@@ -243,6 +243,74 @@ $arrow-line-width: 4px;
   width: 50vw;
   height: 70vh;
   background-color: #6c757d;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 25vh;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 1.5vh;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      clear: both;
+      // opacity: 0;
+    }
+
+    li.half {
+      width: 49%;
+      // margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+input[type="text"],
+input[type="email"] {
+  border: 3px solid #495057;
+  border-radius: 10px;
+  background: #ced4da;
+  width: 90%;
+  height: 50px;
+  font-size: 15px;
+  padding: 1 20px;
+  color: black;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+textarea {
+  border: 2px solid #495057;
+  border-radius: 10px;
+  background: #ced4da;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  color: black;
+  padding: 20px;
+  min-height: 150px;
+  box-sizing: border-box;
+}
+
+.form-button {
+  color: #212529;
+  background: #495057;
+  font: 11px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 2px solid #212529;
+  border-radius: 5px;
+  // float: right;
 }
 
 .close-btn {
@@ -256,34 +324,6 @@ $arrow-line-width: 4px;
   font-size: 3rem;
   color: white;
 }
-
-.popup-icon {
-  // transition: color 0.25s ease, transform 0.25s;
-}
-
-.popup-description {
-  font-family: "Secular One", sans-serif;
-  position: absolute;
-  top: 2rem;
-  left: -0.7rem;
-  // color: white;
-  // visibility: hidden;
-  // opacity: 0;
-  font-size: 1.5rem;
-  // transition: color 0.25s ease, opacity 0.25s, visibility 0.25s, transform 0.25s;
-}
-
-// .close-btn:hover .popup-icon {
-//   color: #239ccd;
-//   transform: translate(0, -0.25rem);
-// }
-
-// .close-btn:hover .popup-description {
-// color: #239ccd;
-// transform: translate(0, -1rem);
-// visibility: visible;
-// opacity: 1;
-// }
 
 /* navbar.js */
 

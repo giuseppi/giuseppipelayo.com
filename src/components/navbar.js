@@ -1,7 +1,6 @@
 import React from "react";
 import NavItem from "./navitem.js";
 import { motion, AnimatePresence } from "framer-motion";
-import DownloadLink from "react-download-link";
 import { HashLink } from "react-router-hash-link";
 
 import Resume from "../assets/GiuseppiPelayo_Resume.pdf";
