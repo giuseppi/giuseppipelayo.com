@@ -33,6 +33,11 @@ const Popup = ({ handleClose }) => {
         <div className="popup-text">test</div>
         {/* Mail form */}
         <div className="popup-form">
+          <h2>Contact me</h2>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus excepturi iure quod modi quo aperiam repudiandae quia illum.
+            Ducimus quam dolorum incidunt odio iusto fugit, optio asperiores natus tenetur!
+          </h3>
           <form>
             <ul>
               <li className="half">
@@ -48,7 +53,12 @@ const Popup = ({ handleClose }) => {
                 <textarea type="text" name="message" placeholder="message" required />
               </li>
               <li>
-                <motion.button type="submit" className="form-button" value="SEND">
+                <motion.button
+                  whileHover={{ transform: "translate(0, -0.25rem)" }}
+                  whileTap={{ scale: 0.8 }}
+                  type="submit"
+                  className="form-button"
+                  value="SEND">
                   SEND
                 </motion.button>
               </li>
