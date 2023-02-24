@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
 
 // Layout
-import Layout from "./components/layout.js";
+import Layout from "./components/Layout";
 
 function App() {
   return (

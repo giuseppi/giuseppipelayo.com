@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -25,6 +25,14 @@ const dropIn = {
 };
 
 const Popup = ({ handleClose }) => {
+  const [letterClass, setLetterClass] = useState("text-animate");
+
+  useEffect(() => {
+    return setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 3000);
+  });
+
   return (
     <motion.div className="popup-container" onClick={handleClose} variants={dropIn} initial="hidden" animate="visible" exit="exit">
       {/* Actual Popup Box */}

@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import Arrow from "./arrow.js";
-import Temp from "../assets/img/temp_pic.jpg";
+import Arrow from "../Arrow";
+import Temp from "../../assets/img/temp_pic.jpg";
 
 const About = () => {
   // return (

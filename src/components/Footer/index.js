@@ -1,9 +1,9 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { motion, AnimatePresence } from "framer-motion";
-import SocialItem from "./socialitem.js";
-import NavItem from "./navitem.js";
-import Popup from "./popup";
+import SocialItem from "../SocialItem/index.js";
+import NavItem from "../NavItem";
+import Popup from "../Popup";
 
 // FontAwesome
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";

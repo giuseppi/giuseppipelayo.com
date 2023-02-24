@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Header from "./header.js";
-import About from "./about.js";
-import Projects from "./projects.js";
-import Footer from "./footer.js";
+import Header from "../Header";
+import About from "../About";
+import Projects from "../Projects";
+import Footer from "../Footer";
 
 const Layout = () => {
   const [modalOpen, setModalOpen] = useState(false);

@@ -1,13 +1,13 @@
 import React from "react";
-import NavItem from "./navitem.js";
+import NavItem from "../NavItem";
 import { motion, AnimatePresence } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 
-import Resume from "../assets/GiuseppiPelayo_Resume.pdf";
+import Popup from "../Popup";
+import Resume from "../../assets/GiuseppiPelayo_Resume.pdf";
 
 // FontAwesome
 import { faCircleHalfStroke, faEnvelope, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
-import Popup from "./popup.js";
 
 const Navbar = ({ modalOpen, closePopup, openPopup }) => {
   return (
