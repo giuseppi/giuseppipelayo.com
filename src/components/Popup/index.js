@@ -27,6 +27,11 @@ const dropIn = {
   },
 };
 
+const focusBox = {
+  transform: "translate(0, -0.25rem",
+  boxShadow: "7.5px 7.5px 20px #495057",
+};
+
 const Popup = ({ handleClose }) => {
   return (
     <motion.div className="popup-container" onClick={handleClose} variants={dropIn} initial="hidden" animate="visible" exit="exit">
@@ -36,27 +41,68 @@ const Popup = ({ handleClose }) => {
         <div className="popup-text">test</div>
         {/* Mail form */}
         <div className="popup-form">
-          <h1>Contact Me</h1>
-          <p>
+          <motion.h1 variants={dropIn} initial="hidden" animate="visible">
+            Contact Me
+          </motion.h1>
+          <motion.p variants={dropIn} initial="hidden" animate="visible">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus excepturi iure quod modi quo aperiam repudiandae quia illum.
             Ducimus quam dolorum incidunt odio iusto fugit, optio asperiores natus tenetur!
-          </p>
+          </motion.p>
           <form>
             <ul>
               <li className="half">
-                <motion.input whileFocus={{ transform: "translate(0, -0.25rem)" }} type="text" name="name" placeholder="name" required />
+                <motion.input
+                  whileFocus={focusBox}
+                  variants={dropIn}
+                  initial="hidden"
+                  animate="visible"
+                  type="text"
+                  name="name"
+                  placeholder="name"
+                  required
+                />
               </li>
               <li className="half">
-                <input type="text" name="email" placeholder="email" required />
+                <motion.input
+                  whileFocus={focusBox}
+                  variants={dropIn}
+                  initial="hidden"
+                  animate="visible"
+                  type="text"
+                  name="email"
+                  placeholder="email"
+                  required
+                />
               </li>
               <li>
-                <input type="text" name="subject" placeholder="subject" required />
+                <motion.input
+                  whileFocus={focusBox}
+                  variants={dropIn}
+                  initial="hidden"
+                  animate="visible"
+                  type="text"
+                  name="subject"
+                  placeholder="subject"
+                  required
+                />
               </li>
               <li>
-                <textarea type="text" name="message" placeholder="message" required />
+                <motion.textarea
+                  whileFocus={focusBox}
+                  variants={dropIn}
+                  initial="hidden"
+                  animate="visible"
+                  type="text"
+                  name="message"
+                  placeholder="message"
+                  required
+                />
               </li>
               <li>
                 <motion.button
+                  variants={dropIn}
+                  initial="hidden"
+                  animate="visible"
                   whileHover={{ transform: "translate(0, -0.25rem)" }}
                   whileTap={{ scale: 0.8 }}
                   type="submit"
@@ -68,12 +114,7 @@ const Popup = ({ handleClose }) => {
             </ul>
           </form>
         </div>
-        <motion.button
-          className="close-btn"
-          whileHover={{ color: "darkgrey", transform: "translate(0, -0.25rem)" }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ type: "spring" }}
-          onClick={handleClose}>
+        <motion.button className="close-btn" whileHover={focusBox} whileTap={{ scale: 0.9 }} transition={{ type: "spring" }} onClick={handleClose}>
           <FontAwesomeIcon icon={faXmark} className={"popup-icon"} />
         </motion.button>
       </div>
