@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../Navbar";
 import { motion } from "framer-motion";
 
+import "./index.scss";
+
 import Arrow from "../Arrow";
 import SocialItem from "../SocialItem";
 

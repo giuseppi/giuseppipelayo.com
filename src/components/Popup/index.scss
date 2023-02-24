@@ -1,0 +1,124 @@
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-info {
+  width: 80vw;
+  height: 70vh;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 7.5px 7.5px 20px #495057;
+}
+
+.popup-text {
+  width: 50vw;
+  height: 70vh;
+  background-color: #343a40;
+}
+
+.popup-form {
+  width: 50vw;
+  height: 70vh;
+  background-color: #6c757d;
+
+  h2 {
+    margin-top: 10vh;
+  }
+  h3 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 5vh;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 2.5vh;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      clear: both;
+      // opacity: 0;
+    }
+
+    li.half {
+      width: 45%;
+      margin-left: 4%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 3%;
+      }
+    }
+  }
+}
+
+input[type="text"],
+input[type="email"] {
+  outline: none;
+  border: 3px solid #495057;
+  border-radius: 10px;
+  background: #ced4da;
+  width: 90%;
+  height: 50px;
+  font-size: 15px;
+  padding: 1 20px;
+  color: black;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+textarea {
+  outline: none;
+  border: 2px solid #495057;
+  border-radius: 10px;
+  background: #ced4da;
+  width: 90%;
+  height: 50px;
+  font-size: 15px;
+  color: black;
+  padding: 20px;
+  min-height: 150px;
+  box-sizing: border-box;
+}
+
+.form-button {
+  color: #212529;
+  background: #495057;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 2px solid #212529;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2.25rem;
+  right: 3.25rem;
+  border: none;
+  background-color: transparent;
+  transition: color 0.5s ease;
+  cursor: pointer;
+  font-size: 3rem;
+  color: white;
+}

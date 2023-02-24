@@ -3,6 +3,7 @@ import NavItem from "../NavItem";
 import { motion, AnimatePresence } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 
+import "./index.scss";
 import Popup from "../Popup";
 import Resume from "../../assets/GiuseppiPelayo_Resume.pdf";
 

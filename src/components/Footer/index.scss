@@ -1,0 +1,78 @@
+.footer-container {
+  background-color: #121417;
+  white-space: nowrap;
+  display: inline-block;
+  min-height: 300px;
+}
+
+.footer-home {
+  color: white;
+  text-decoration: none;
+  font-family: "Permanent Marker", cursive;
+  font-size: 5rem;
+  transition: color 1s ease;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 3rem;
+}
+
+.social-content {
+  display: inline-block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 4rem;
+}
+
+.footer-link {
+  color: #6c757d;
+  text-decoration: none;
+  font-family: "Secular One", sans-serif;
+  font-size: 2rem;
+  position: relative;
+}
+
+.footer-icon {
+  transition: opacity 0.75s, transform 0.5s;
+}
+
+.footer-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.25rem;
+  transition: color 1s ease, opacity 0.75s, visibility 0.35s, transform 0.5s;
+}
+
+.footer-link:hover .footer-icon {
+  opacity: 0.25;
+  transform: translate(0, -0.25rem);
+}
+
+.footer-link:hover .footer-description {
+  color: #239ccd;
+  transform: translate(0, -1rem);
+  visibility: visible;
+  opacity: 1;
+}
+
+#footer-github-icon {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+#footer-linkedin-description {
+  left: -1.75rem;
+}
+
+#footer-github-description {
+  left: 2.4rem;
+}
+
+#footer-contact {
+  left: -0.9rem;
+}

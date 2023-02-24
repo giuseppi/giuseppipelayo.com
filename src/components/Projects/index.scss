@@ -1,0 +1,27 @@
+.projects-container {
+  background-color: white;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.projects-heading-container {
+  margin-top: 5vh;
+}
+
+.projects-heading,
+.projects-description {
+  text-align: center;
+}
+
+.projects-heading {
+  font-family: "League Spartan", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.projects-description {
+  font-family: "League Spartan", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  color: #8e9aaf;
+}

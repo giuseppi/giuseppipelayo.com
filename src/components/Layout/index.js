@@ -4,6 +4,8 @@ import About from "../About";
 import Projects from "../Projects";
 import Footer from "../Footer";
 
+import "./index.scss";
+
 const Layout = () => {
   const [modalOpen, setModalOpen] = useState(false);
 

@@ -5,6 +5,8 @@ import SocialItem from "../SocialItem/index.js";
 import NavItem from "../NavItem";
 import Popup from "../Popup";
 
+import "./index.scss";
+
 // FontAwesome
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";

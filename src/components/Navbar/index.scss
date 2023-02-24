@@ -1,0 +1,78 @@
+.navbar {
+  height: 25vh;
+  margin-left: 5rem;
+}
+
+.home {
+  color: white;
+  text-decoration: none;
+  font-family: "Permanent Marker", cursive;
+  font-size: 5rem;
+  float: "left";
+  padding: 15px 0;
+  transition: color 1s ease;
+}
+
+.nav-content {
+  position: absolute;
+  display: flex;
+  top: 3.25rem;
+  right: 5rem;
+}
+
+.navlink {
+  color: #6c757d;
+  text-decoration: none;
+  font-family: "Secular One", sans-serif;
+  margin-left: 4.5rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+#nav-resume {
+  left: -1.23rem;
+}
+
+#nav-contact {
+  left: -0.8rem;
+}
+
+#nav-projects {
+  left: -1.3rem;
+}
+
+#nav-darkmode {
+  left: -0.3rem;
+}
+
+.nav-icon {
+  transition: color 1s ease, transform 0.5s;
+}
+
+.nav-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.25rem;
+  transition: opacity 0.75s, visibility 0.35s, transform 0.5s;
+}
+
+.navlink:hover .nav-icon {
+  color: #239ccd;
+  transform: translate(0, -0.25rem);
+}
+
+.navlink:hover .nav-description {
+  transform: translate(0, 1rem);
+  visibility: visible;
+  opacity: 1;
+}
+
+.home:hover,
+.footer-home:hover {
+  color: #239ccd;
+}

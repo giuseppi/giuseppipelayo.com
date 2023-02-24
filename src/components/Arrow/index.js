@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { HashLink } from "react-router-hash-link";
 
+import "./index.scss";
+
 const Arrow = ({ arrowClass }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });

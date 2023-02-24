@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+import "./index.scss";
+
 import Arrow from "../Arrow";
 import Temp from "../../assets/img/temp_pic.jpg";
 
