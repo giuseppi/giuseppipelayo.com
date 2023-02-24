@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Loader from "react-loaders";
+
 // CSS
 import "./App.scss";
 
@@ -13,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}></Route>
       </Routes>
+      <Loader type="semi-circle-spin" />
     </BrowserRouter>
   );
 }

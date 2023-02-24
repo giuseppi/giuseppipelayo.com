@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Header from "../Header";
-import About from "../About";
 import Projects from "../Projects";
 import Footer from "../Footer";
 
@@ -16,7 +15,6 @@ const Layout = () => {
     <>
       <div className="flex-container">
         <Header modalOpen={modalOpen} closePopup={closePopup} openPopup={openPopup} />
-        <About />
         <Projects />
         <Footer modalOpen={modalOpen} closePopup={closePopup} openPopup={openPopup} />
       </div>
