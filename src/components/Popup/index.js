@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import "./index.scss";
 
@@ -28,14 +28,6 @@ const dropIn = {
 };
 
 const Popup = ({ handleClose }) => {
-  // const [letterClass, setLetterClass] = useState("text-animate");
-
-  // useEffect(() => {
-  //   return setTimeout(() => {
-  //     setLetterClass("text-animate-hover");
-  //   }, 3000);
-  // });
-
   return (
     <motion.div className="popup-container" onClick={handleClose} variants={dropIn} initial="hidden" animate="visible" exit="exit">
       {/* Actual Popup Box */}
@@ -44,11 +36,11 @@ const Popup = ({ handleClose }) => {
         <div className="popup-text">test</div>
         {/* Mail form */}
         <div className="popup-form">
-          <h2>Contact me</h2>
-          <h3>
+          <h1>Contact Me</h1>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus excepturi iure quod modi quo aperiam repudiandae quia illum.
             Ducimus quam dolorum incidunt odio iusto fugit, optio asperiores natus tenetur!
-          </h3>
+          </p>
           <form>
             <ul>
               <li className="half">
