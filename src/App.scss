@@ -220,7 +220,7 @@ $arrow-line-width: 4px;
   align-items: center;
   justify-content: center;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .popup-info {
@@ -246,6 +246,10 @@ $arrow-line-width: 4px;
 
   h2 {
     margin-top: 10vh;
+  }
+  h3 {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   ul {
