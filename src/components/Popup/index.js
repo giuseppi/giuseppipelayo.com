@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import "./index.scss";
 
+import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -33,6 +34,21 @@ const focusBox = {
 };
 
 const Popup = ({ handleClose }) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm("service_vcoqms8", "template_l0dmcar", form.current, "Stke9DRB0LAddRiQ3").then(
+      (result) => {
+        alert("Message successfully sent!");
+        window.location.reload(false);
+      },
+      (error) => {
+        alert("Failed to send the message, please try again.");
+      }
+    );
+  };
   return (
     <motion.div className="popup-container" onClick={handleClose} variants={dropIn} initial="hidden" animate="visible" exit="exit">
       {/* Actual Popup Box */}
@@ -48,7 +64,7 @@ const Popup = ({ handleClose }) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus excepturi iure quod modi quo aperiam repudiandae quia illum.
             Ducimus quam dolorum incidunt odio iusto fugit, optio asperiores natus tenetur!
           </motion.p>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <ul>
               <li className="half">
                 <motion.input
