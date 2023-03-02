@@ -54,16 +54,18 @@ const Popup = ({ handleClose }) => {
       {/* Actual Popup Box */}
       <div className="popup-info" onClick={(e) => e.stopPropagation()}>
         {/* Text */}
-        <div className="popup-text">test</div>
+        {/* <div className="popup-text">test</div> */}
         {/* Mail form */}
         <div className="popup-form">
-          <motion.h1 variants={dropIn} initial="hidden" animate="visible">
-            Contact Me
-          </motion.h1>
-          <motion.p variants={dropIn} initial="hidden" animate="visible">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus excepturi iure quod modi quo aperiam repudiandae quia illum.
-            Ducimus quam dolorum incidunt odio iusto fugit, optio asperiores natus tenetur!
-          </motion.p>
+          <div className="about">
+            <motion.h1 variants={dropIn} initial="hidden" animate="visible">
+              Contact Me
+            </motion.h1>
+            <motion.p variants={dropIn} initial="hidden" animate="visible">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus excepturi iure quod modi quo aperiam repudiandae quia
+              illum. Ducimus quam dolorum incidunt odio iusto fugit, optio asperiores natus tenetur!
+            </motion.p>
+          </div>
           <form ref={form} onSubmit={sendEmail}>
             <ul>
               <li className="half">
