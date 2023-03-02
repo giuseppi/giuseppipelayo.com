@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #121417;
 }
 
 .popup-info {
@@ -34,16 +34,19 @@
   height: 70vh;
   background-color: #6c757d;
   justify-content: center;
+  h1 {
+    font-family: League Spartan, Helvetica, Arial, sans-serif;
+    font-size: 35px;
+  }
   p {
+    font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman, serif;
     margin-left: 5%;
     margin-right: 5%;
   }
-
   ul {
     padding: 0;
     margin: 0;
     margin-top: 5vh;
-
     li {
       padding: 0;
       margin: 0;
@@ -54,7 +57,6 @@
       clear: both;
       // opacity: 0;
     }
-
     li.half {
       width: 45%;
       margin-left: 4%;
@@ -68,12 +70,23 @@
   }
 }
 
+label {
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
+  // display: block;
+  margin-right: 5px;
+}
+
+#message-label {
+  margin-bottom: 10px;
+}
+
 input[type="text"],
 input[type="email"] {
+  font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman, serif !important;
   outline: none;
-  border: 3px solid #495057;
-  border-radius: 10px;
-  background: #ced4da;
+  border: none;
+  border-bottom: 3px solid #495057;
+  background: #6c757d;
   width: 90%;
   height: 50px;
   font-size: 15px;
@@ -84,10 +97,11 @@ input[type="email"] {
 }
 
 textarea {
+  font-family: LibreBaskerville-Regular, Palatino Linotype, Times New Roman, serif !important;
   outline: none;
-  border: 2px solid #495057;
-  border-radius: 10px;
-  background: #ced4da;
+  border: none;
+  border-bottom: 3px solid #495057;
+  background: #6c757d;
   width: 90%;
   height: 50px;
   font-size: 15px;
@@ -97,14 +111,22 @@ textarea {
   box-sizing: border-box;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 .form-button {
+  font-family: League Spartan, Helvetica, Arial, sans-serif;
   color: #212529;
   background: #495057;
   font-size: 15px;
   letter-spacing: 3px;
   text-decoration: none;
-  padding: 8px 10px;
-  border: 2px solid #212529;
+  padding: 13px 12px;
+  border: 2.5px solid #212529;
   border-radius: 5px;
   cursor: pointer;
 }
