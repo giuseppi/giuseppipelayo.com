@@ -49,12 +49,6 @@ const Navbar = ({ modalOpen, closePopup, openPopup }) => {
             onExitComplete={() => null}>
             {modalOpen && <Popup modalOpen={modalOpen} handleClose={closePopup} />}
           </AnimatePresence>
-          {/* Dark/Light Mode */}
-          <motion.div className="button-wrapper" whileTap={{ scale: 0.9 }}>
-            <HashLink className="navlink" exact="true" activeclassname="active" to="/">
-              <NavItem iconClass={"nav"} descClass={"nav"} descID={"nav-darkmode"} icon={faCircleHalfStroke} description="dark" />
-            </HashLink>
-          </motion.div>
         </motion.nav>
       </section>
     </>
