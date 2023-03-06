@@ -58,13 +58,13 @@
       // opacity: 0;
     }
     li.half {
-      width: 45%;
-      margin-left: 4%;
+      width: 40%;
+      margin-left: 8%;
       float: left;
       clear: none;
 
       &:first-child {
-        margin-left: 3%;
+        margin-left: 6%;
       }
     }
   }
@@ -73,7 +73,7 @@
 label {
   font-family: League Spartan, Helvetica, Arial, sans-serif;
   // display: block;
-  margin-right: 5px;
+  // margin-right: 5px;
 }
 
 #message-label {
@@ -90,10 +90,13 @@ input[type="email"] {
   width: 90%;
   height: 50px;
   font-size: 15px;
-  padding: 1 20px;
   color: black;
-  padding: 0 20px;
+  padding: 0 5px;
   box-sizing: border-box;
+}
+
+#subject {
+  width: 40%;
 }
 
 textarea {
@@ -102,11 +105,11 @@ textarea {
   border: none;
   border-bottom: 3px solid #495057;
   background: #6c757d;
-  width: 90%;
+  width: 65%;
   height: 50px;
   font-size: 15px;
   color: black;
-  padding: 20px;
+  padding: 0 5px;
   min-height: 150px;
   box-sizing: border-box;
 }
