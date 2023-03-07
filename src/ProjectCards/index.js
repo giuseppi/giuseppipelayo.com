@@ -10,7 +10,8 @@ const ProjectCards = () => {
 
   return (
     <div className="card-wrapper">
-      <Card />
+      <Card project="Portfolio" description="this is portfolio" />
+      <Card project="GFit" description="this is gfit" />
     </div>
   );
 };
