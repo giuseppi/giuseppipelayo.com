@@ -7,7 +7,7 @@ const Technology = ({ iconName, iconLabel }) => {
   return (
     <div className="technology">
       <div className="technology_circle">
-        <FontAwesomeIcon className="technology_icon" icon={iconName} />
+        <FontAwesomeIcon className="technology_icon" icon="fa-brands fa-react" />
       </div>
       <span className="technology_label">{iconLabel}</span>
     </div>

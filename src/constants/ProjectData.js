@@ -9,6 +9,24 @@ export const properties = [
       text: "completed",
       color: "#55a630",
     },
+    technologies: [
+      {
+        icon: "faReact",
+        label: "React",
+      },
+      {
+        icon: "faJs",
+        label: "JS",
+      },
+      {
+        icon: "faHtml5",
+        label: "HTML",
+      },
+      {
+        icon: "faCss3",
+        label: "CSS",
+      },
+    ],
   },
   {
     id: 2,
@@ -20,5 +38,27 @@ export const properties = [
       text: "in progress",
       color: "#ffdd32",
     },
+    technologies: [
+      {
+        icon: "fa-mdb",
+        label: "MongoDB",
+      },
+      {
+        icon: "fa-react",
+        label: "React",
+      },
+      {
+        icon: "faJs",
+        label: "JS",
+      },
+      {
+        icon: "faHtml5",
+        label: "HTML",
+      },
+      {
+        icon: "faCss3",
+        label: "CSS",
+      },
+    ],
   },
 ];

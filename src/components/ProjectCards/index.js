@@ -3,11 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import "./index.scss";
 import Technology from "../Technology";
-import { faCss3, faHtml5, faJs, faJsfiddle, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons";
+import { parse } from "@fortawesome/fontawesome-svg-core";
+import { faCss3, faHtml5, faJs, faJsfiddle, faJsSquare, faMdb, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectCards = ({ data }) => {
   // https://www.youtube.com/watch?v=2H6ynAUyD4Q&t=619s
-  const { project, brief, description, imgURL, progress } = data;
+  const { project, brief, description, imgURL, progress, technologies } = data;
   return (
     <div className="projectcards">
       <div className="projectcards_content">
@@ -25,10 +26,13 @@ const ProjectCards = ({ data }) => {
             <span className="projectcards_brief">{brief}</span>
           </div>
           <div className="projectcards_row">
-            <Technology iconName={faReact} iconLabel={"React"} />
+            {technologies.map((item) => (
+              <Technology iconName={item.icon} iconLabel={item.label} />
+            ))}
+            {/* <Technology iconName={faReact} iconLabel={"React"} />
             <Technology iconName={faJs} iconLabel={"JS"} />
             <Technology iconName={faHtml5} iconLabel={"HTML"} />
-            <Technology iconName={faCss3} iconLabel={"CSS"} />
+            <Technology iconName={faCss3} iconLabel={"CSS"} /> */}
           </div>
         </div>
       </div>
