@@ -1,0 +1,40 @@
+.projectcards {
+  width: 25%;
+  min-width: 200px;
+  max-width: 400px;
+  margin: 20px;
+  font-family: sans-serif;
+  position: relative;
+  cursor: pointer;
+  background-color: #e9ecef;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.projectcards::before {
+  content: "";
+  display: block;
+  padding-bottom: calc((5 / 4) * 100%);
+}
+
+.projectcards_content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.projectcards_image-container {
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+}
+
+.projectcards_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
