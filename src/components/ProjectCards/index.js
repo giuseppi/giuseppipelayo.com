@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import "./index.scss";
+import Technology from "../Technology";
+import { faCss3, faHtml5, faJs, faJsfiddle, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons";
 
 const ProjectCards = ({ data }) => {
   // https://www.youtube.com/watch?v=2H6ynAUyD4Q&t=619s
@@ -21,6 +23,12 @@ const ProjectCards = ({ data }) => {
           </div>
           <div className="projectcards_row">
             <span className="projectcards_brief">{brief}</span>
+          </div>
+          <div className="projectcards_row">
+            <Technology iconName={faReact} iconLabel={"React"} />
+            <Technology iconName={faJs} iconLabel={"JS"} />
+            <Technology iconName={faHtml5} iconLabel={"HTML"} />
+            <Technology iconName={faCss3} iconLabel={"CSS"} />
           </div>
         </div>
       </div>
