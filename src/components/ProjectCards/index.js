@@ -26,13 +26,13 @@ const ProjectCards = ({ data }) => {
             <span className="projectcards_brief">{brief}</span>
           </div>
           <div className="projectcards_row">
-            {technologies.map((item) => (
+            {/* {technologies.map((item) => (
               <Technology iconName={item.icon} iconLabel={item.label} />
-            ))}
-            {/* <Technology iconName={faReact} iconLabel={"React"}/>
+            ))} */}
+            <Technology iconName={faReact} iconLabel={"React"} />
             <Technology iconName={faJs} iconLabel={"JS"} />
             <Technology iconName={faHtml5} iconLabel={"HTML"} />
-            <Technology iconName={faCss3} iconLabel={"CSS"} /> */}
+            <Technology iconName={faCss3} iconLabel={"CSS"} />
           </div>
         </div>
       </div>
