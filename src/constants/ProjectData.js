@@ -11,19 +11,15 @@ export const properties = [
     },
     technologies: [
       {
-        icon: "faReact",
         label: "React",
       },
       {
-        icon: "faJs",
         label: "JS",
       },
       {
-        icon: "faHtml5",
         label: "HTML",
       },
       {
-        icon: "faCss3",
         label: "CSS",
       },
     ],
@@ -40,23 +36,21 @@ export const properties = [
     },
     technologies: [
       {
-        icon: "fa-mdb",
         label: "MongoDB",
       },
       {
-        icon: "fa-react",
         label: "React",
       },
       {
-        icon: "faJs",
+        label: "NodeJS",
+      },
+      {
         label: "JS",
       },
       {
-        icon: "faHtml5",
         label: "HTML",
       },
       {
-        icon: "faCss3",
         label: "CSS",
       },
     ],

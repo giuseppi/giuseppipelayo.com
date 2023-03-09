@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Header from "../Header";
-import Projects from "../Projects";
+import Projects from "../ProjectsTab/Projects";
 import Footer from "../Footer";
 import Loader from "react-loaders";
 

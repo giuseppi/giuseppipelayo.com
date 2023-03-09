@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import "./index.scss";
 import Card from "../Card";
-import { properties } from "../../constants/ProjectData";
+import { properties } from "../../../constants/ProjectData";
 
 const Projects = () => {
   return (
