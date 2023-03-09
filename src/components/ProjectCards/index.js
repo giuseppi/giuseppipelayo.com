@@ -29,7 +29,7 @@ const ProjectCards = ({ data }) => {
             {technologies.map((item) => (
               <Technology iconName={item.icon} iconLabel={item.label} />
             ))}
-            {/* <Technology iconName={faReact} iconLabel={"React"} />
+            {/* <Technology iconName={faReact} iconLabel={"React"}/>
             <Technology iconName={faJs} iconLabel={"JS"} />
             <Technology iconName={faHtml5} iconLabel={"HTML"} />
             <Technology iconName={faCss3} iconLabel={"CSS"} /> */}
