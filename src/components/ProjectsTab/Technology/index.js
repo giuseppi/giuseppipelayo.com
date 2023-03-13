@@ -7,6 +7,7 @@ import "./index.scss";
 const Technology = ({ iconLabel }) => {
   const Icon = (iconName) => {
     // console.log(iconName);
+    // picks icon for FontAwesome
     return iconName === "React"
       ? faReact
       : iconName === "JS"
