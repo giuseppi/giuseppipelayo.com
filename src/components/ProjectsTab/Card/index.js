@@ -1,14 +1,24 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import ProjectCards from "../ProjectCards";
+import Overlay from "../Overlay";
 
 import "./index.scss";
-import ProjectCards from "../ProjectCards";
 
 const Card = ({ data }) => {
+  const [open, setOpen] = useState(false);
+
+  const openModal = () => {
+    setOpen(true);
+  };
+
+  const closeModal = () => {
+    setOpen(false);
+  };
+
   return (
     <>
-      <ProjectCards data={data} />
-      {/* logic for rendering the expanded view */}
+      <ProjectCards data={data} open={openModal} />
+      {open && <Overlay close={closeModal}>{/* Modal should go here */}</Overlay>}
     </>
   );
 };

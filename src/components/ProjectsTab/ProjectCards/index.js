@@ -3,13 +3,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import "./index.scss";
 import Technology from "../Technology";
-import { parse } from "@fortawesome/fontawesome-svg-core";
 
-const ProjectCards = ({ data }) => {
+const ProjectCards = ({ data, open }) => {
   // https://www.youtube.com/watch?v=2H6ynAUyD4Q&t=619s
   const { project, brief, description, imgURL, progress, technologies } = data;
   return (
-    <div className="projectcards">
+    <div className="projectcards" onClick={open}>
       <div className="projectcards_content">
         <div className="projectcards_image-container">
           <img className="projectcards_image" src={imgURL} alt="project pic" />
