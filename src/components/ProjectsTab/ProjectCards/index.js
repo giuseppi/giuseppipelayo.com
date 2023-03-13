@@ -6,7 +6,7 @@ import Technology from "../Technology";
 
 const ProjectCards = ({ data, open }) => {
   // https://www.youtube.com/watch?v=2H6ynAUyD4Q&t=619s
-  const { project, brief, description, imgURL, progress, technologies } = data;
+  const { project, brief, imgURL, progress, technologies } = data;
   return (
     <div className="projectcards" onClick={open}>
       <div className="projectcards_content">

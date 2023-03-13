@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ProjectCards from "../ProjectCards";
 import Overlay from "../Overlay";
+import Modal from "../Modal";
 
 import "./index.scss";
 
@@ -18,7 +19,7 @@ const Card = ({ data }) => {
   return (
     <>
       <ProjectCards data={data} open={openModal} />
-      {open && <Overlay close={closeModal}>{/* Modal should go here */}</Overlay>}
+      {open && <Overlay close={closeModal}>{<Modal data={data} />}</Overlay>}
     </>
   );
 };
