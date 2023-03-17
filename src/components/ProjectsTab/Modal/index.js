@@ -8,7 +8,6 @@ const Modal = ({ data, close }) => {
   const { project, description, imgURL, progress, technologies } = data;
   return (
     <div className="modal">
-      hi
       <img className="modal_image" alt="project" src={imgURL} />
       <div className="modal_content">
         <div className="modal_row">
