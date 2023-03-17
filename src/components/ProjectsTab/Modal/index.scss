@@ -20,12 +20,12 @@
 
 @media only screen and (min-width: 1281px) {
   .modal {
-    width: 80%;
+    width: 90%;
     height: 80%;
     max-width: 1800px;
     justify-content: space-between;
     align-items: center;
-    flex: row;
+    flex-direction: row;
     padding: 30px;
   }
 }

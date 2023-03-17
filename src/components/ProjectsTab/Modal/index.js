@@ -8,10 +8,13 @@ const Modal = ({ data, close }) => {
   const { project, description, imgURL, progress, technologies } = data;
   return (
     <div className="modal">
+      hi
       <img className="modal_image" alt="project" src={imgURL} />
       <div className="modal_content">
         <div className="modal_row">
-          <span className="modal_progress">{progress}</span>
+          <span className="modal_progress" style={{ backgroundColor: progress.color }}>
+            {progress.text}
+          </span>
         </div>
         <div className="modal_row">
           <span className="modal_title">{project}</span>
