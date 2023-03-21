@@ -19,7 +19,7 @@ const Card = ({ data }) => {
   return (
     <>
       <ProjectCards data={data} open={openModal} />
-      {open && <Overlay close={closeModal}>{<Modal data={data} />}</Overlay>}
+      {open && <Overlay close={closeModal}>{<Modal data={data} close={closeModal} />}</Overlay>}
     </>
   );
 };
