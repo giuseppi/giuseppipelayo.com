@@ -3,7 +3,8 @@ export const properties = [
     id: 1,
     project: "Portfolio",
     brief: "My first project with the purpose of displaying my web developing abilities and portfolio of work.",
-    description: "Portfolio description",
+    description:
+      "Portfolio description. testing 123 fill more into here so it is actually a description blah blah blah Portfolio description. testing 123 fill more into here so it is actually a description blah blah blah Portfolio description. testing 123 fill more into here so it is actually a description blah blah blah Portfolio description. testing 123 fill more into here so it is actually a description blah blah blah Portfolio description. testing 123 fill more into here so it is actually a description blah blah blah",
     imgURL: "https://cdn.discordapp.com/attachments/323728336469622785/1083140425885425726/image.png",
     progress: {
       text: "completed",

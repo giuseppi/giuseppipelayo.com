@@ -25,11 +25,6 @@
   font-size: 3rem;
 }
 
-.modal_description {
-  font-size: 1.5rem;
-  color: #737373;
-}
-
 .modal_image {
   object-fit: cover;
   border-radius: 20px;
@@ -38,6 +33,32 @@
 .modal_content {
   background-color: white;
   display: flex;
+}
+
+.modal_description-wrapper {
+  margin: 20px 0px;
+  text-align: left;
+  overflow-y: scroll;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.modal_description {
+  font-size: 1.5rem;
+  color: #737373;
+  margin: 0px;
+  padding: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #cacaca;
 }
 
 @media only screen {

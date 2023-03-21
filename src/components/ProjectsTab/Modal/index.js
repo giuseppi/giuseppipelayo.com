@@ -18,13 +18,16 @@ const Modal = ({ data, close }) => {
         <div className="modal_row">
           <span className="modal_title">{project}</span>
         </div>
-        <div className="modal_row">
+        {/* <div className="modal_row">
           <span className="modal_description">{description}</span>
-        </div>
+        </div> */}
         <div className="modal_row">
           {technologies.map((item) => (
             <Technology iconName={item.label} iconLabel={item.label} />
           ))}
+        </div>
+        <div className="modal_description-wrapper">
+          <p className="modal_description">{description}</p>
         </div>
       </div>
     </div>
