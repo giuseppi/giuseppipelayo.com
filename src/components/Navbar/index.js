@@ -8,7 +8,7 @@ import Popup from "../Popup";
 import Resume from "../../assets/GiuseppiPelayo_Resume.pdf";
 
 // FontAwesome
-import { faCircleHalfStroke, faEnvelope, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = ({ modalOpen, closePopup, openPopup }) => {
   return (

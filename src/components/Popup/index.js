@@ -50,7 +50,7 @@ const Popup = ({ handleClose }) => {
     );
   };
   return (
-    <motion.div className="popup-container" onClick={handleClose} variants={dropIn} initial="hidden" animate="visible" exit="exit">
+    <motion.div className="popup-container" onClick={handleClose} initial="hidden" variants={dropIn} animate="visible" exit="exit">
       {/* Actual Popup Box */}
       <div className="popup-info" onClick={(e) => e.stopPropagation()}>
         {/* Text */}
