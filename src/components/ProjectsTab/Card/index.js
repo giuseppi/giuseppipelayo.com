@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProjectCards from "../ProjectCards";
 import Overlay from "../Overlay";
 import Modal from "../Modal";
+import { AnimatePresence } from "framer-motion";
 
 import "./index.scss";
 
