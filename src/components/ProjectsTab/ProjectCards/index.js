@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import "./index.scss";
 import Technology from "../Technology";
@@ -8,7 +8,7 @@ const ProjectCards = ({ data, open }) => {
   // https://www.youtube.com/watch?v=2H6ynAUyD4Q&t=619s
   const { project, brief, imgURL, progress, technologies } = data;
   return (
-    <div className="projectcards" onClick={open}>
+    <motion.div className="projectcards" onClick={open} whileHover={{ scale: 1.1 }}>
       <div className="projectcards_content">
         <div className="projectcards_image-container">
           <img className="projectcards_image" src={imgURL} alt="project pic" />
@@ -30,7 +30,7 @@ const ProjectCards = ({ data, open }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
