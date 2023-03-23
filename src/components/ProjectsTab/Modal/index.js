@@ -51,9 +51,9 @@ const Modal = ({ data, close }) => {
         <motion.div className="modal_description-wrapper" variants={modalRowVariants}>
           <p className="modal_description">{description}</p>
         </motion.div>
-        <button className="modal_close-wrapper" onClick={close}>
+        <motion.button className="modal_close-wrapper" onClick={close} whileHover={{ scale: 1.2 }}>
           <IoCloseCircleOutline className="modal_close-icon" />
-        </button>
+        </motion.button>
       </motion.div>
     </motion.div>
   );

@@ -14,7 +14,7 @@ const Projects = () => {
       </motion.div>
       <div className="properties">
         {properties.map((item) => (
-          <Card data={item} />
+          <Card data={item} key={item.id} />
         ))}
       </div>
     </div>
