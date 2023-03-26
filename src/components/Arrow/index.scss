@@ -71,3 +71,19 @@ $arrow-line-width: 4px;
     background: #239ccd;
   }
 }
+
+@media all and (max-height: 800px) {
+  .arrow-projects {
+    position: absolute;
+    top: 92vh;
+    left: 50vw;
+  }
+}
+
+// @media all and (max-height: 320px) {
+//   .arrow-projects {
+//     position: absolute;
+//     top: 82vh;
+//     left: 50vw;
+//   }
+// }
