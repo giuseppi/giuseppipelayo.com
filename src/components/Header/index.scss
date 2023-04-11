@@ -2,7 +2,8 @@
   position: relative;
   background-color: #121417;
   min-height: 100vh;
-  max-height: 100vh;
+  // min-width: 100vw;
+  // max-height: 100vh;
 }
 
 .general {
@@ -15,6 +16,7 @@
 .name {
   color: white;
   font-size: 4rem;
+  font-size: 4vw;
   letter-spacing: 3px;
 }
 
@@ -22,6 +24,7 @@
   color: #239ccd;
   font-style: italic;
   font-size: 2.5rem;
+  font-size: 2vw;
   letter-spacing: 2px;
 }
 
@@ -89,10 +92,17 @@
   left: -1rem;
 }
 
-// @media all and (max-width: 320px) {
-//   .arrow-projects {
-//     position: absolute;
-//     top: 92vh;
-//     left: 50vw;
-//   }
-// }
+@media all and (max-width: 320px) {
+  .arrow-projects {
+    position: absolute;
+    top: 92vh;
+    left: 50vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header-container {
+    min-height: 100vh;
+    width: 100%;
+  }
+}

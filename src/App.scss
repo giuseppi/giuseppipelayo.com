@@ -6,20 +6,32 @@
 $primary-color: #239ccd;
 @import "loaders.css/src/animations/semi-circle-spin.scss";
 
-body {
-  display: block;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6c757d;
 }
 
 .flex-container,
 html,
 body {
-  height: 100%;
+  // height: 100%;
+  // width: 100%;
   padding: 0;
 }
 
 html {
   position: relative;
+}
+
+.flex-container {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 .loader-hidden {
@@ -38,4 +50,6 @@ html {
   height: 50px;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
+  z-index: 999999999;
+  background-color: #121417;
 }
