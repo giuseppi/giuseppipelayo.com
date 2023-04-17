@@ -18,6 +18,8 @@
   display: flex;
   top: 3.25rem;
   right: 5rem;
+  // width: 50%;
+  // min-width: 200px;
 }
 
 .navlink {
@@ -27,6 +29,7 @@
   margin-left: 4.5rem;
   font-size: 2rem;
   position: relative;
+  display: inline-block;
 }
 
 #nav-resume {
