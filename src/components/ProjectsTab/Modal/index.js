@@ -1,6 +1,6 @@
 import React from "react";
 import Technology from "../Technology";
-import { IoCloseCircleOutline } from "react-icons/io5";
+// import { IoCloseCircleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 
 import "./index.scss";
