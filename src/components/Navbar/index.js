@@ -5,7 +5,7 @@ import { HashLink } from "react-router-hash-link";
 
 import "./index.scss";
 import Popup from "../Popup";
-import Resume from "../../assets/GiuseppiPelayo_Resume.pdf";
+import Resume from "../../assets/Giuseppi_Pelayo_Resume.pdf";
 
 // FontAwesome
 import { faEnvelope, faSuitcase, faUser } from "@fortawesome/free-solid-svg-icons";
