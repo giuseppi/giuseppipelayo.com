@@ -62,8 +62,10 @@ const Popup = ({ handleClose }) => {
               Let's talk!
             </motion.h1>
             <motion.p initial="hidden" animate="visible">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptatibus excepturi iure quod modi quo aperiam repudiandae quia
-              illum. Ducimus quam dolorum incidunt odio iusto fugit, optio asperiores natus tenetur!
+              Whether you have a question, a project in mind, or just want to connect, I'm here to listen and explore how we can collaborate. With a
+              passion for problem-solving and a commitment to delivering high-quality software solutions, I'm eager to bring my skills in C++,
+              JavaScript, React, HTML & CSS to your next project. Drop me a message, and let's start the conversation on how we can work together to
+              create something amazing.
             </motion.p>
           </div>
           <form ref={form} onSubmit={sendEmail}>
