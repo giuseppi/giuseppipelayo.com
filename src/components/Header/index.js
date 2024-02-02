@@ -18,7 +18,7 @@ const Header = ({ modalOpen, closePopup, openPopup }) => {
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="general">
           {/* Text */}
           <h1 className="name">Hi, I'm Giuseppi</h1>
-          <h1 className="slogan">Web Developer</h1>
+          <h1 className="slogan">Software Developer</h1>
         </motion.div>
         {/* Social Media */}
         <motion.ul initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="header-content">
