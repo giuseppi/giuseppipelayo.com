@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 
 import "./index.scss";
 
-import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -39,16 +38,31 @@ const Popup = ({ handleClose }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_vcoqms8", "template_l0dmcar", form.current, "Stke9DRB0LAddRiQ3").then(
-      (result) => {
+    // Collect form data
+    const formData = new FormData(form.current);
+
+    // Convert formData to a plain object
+    const formDataObj = Object.fromEntries(formData.entries());
+
+    // Send form data to your Express backend
+    fetch("/api/send-email", {
+      // Adjust the URL path as necessary
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formDataObj),
+    })
+      .then((response) => response.json())
+      .then((data) => {
         alert("Message successfully sent!");
         window.location.reload(false);
-      },
-      (error) => {
+      })
+      .catch((error) => {
         alert("Failed to send the message, please try again.");
-      }
-    );
+      });
   };
+
   return (
     <motion.div className="popup-container" onClick={handleClose} initial="hidden" variants={dropIn} animate="visible" exit="exit">
       {/* Actual Popup Box */}
