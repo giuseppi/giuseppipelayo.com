@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-
+import emailjs from "@emailjs/browser";
 import "./index.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -38,29 +38,16 @@ const Popup = ({ handleClose }) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Collect form data
-    const formData = new FormData(form.current);
+    const userName = form.current.name.value; // Assuming there's an input with name="user_name"
 
-    // Convert formData to a plain object
-    const formDataObj = Object.fromEntries(formData.entries());
-
-    // Send form data to your Express backend
-    fetch("/api/send-email", {
-      // Adjust the URL path as necessary
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    emailjs.sendForm("service_vcoqms8", "template_l0dmcar", form.current, "Stke9DRB0LAddRiQ3").then(
+      (result) => {
+        alert(`E-mail sent, thank you ${userName}!`);
       },
-      body: JSON.stringify(formDataObj),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        alert("Message successfully sent!");
-        window.location.reload(false);
-      })
-      .catch((error) => {
-        alert("Failed to send the message, please try again.");
-      });
+      (error) => {
+        alert(`E-mail failed to send. ${error.text}`);
+      }
+    );
   };
 
   return (
@@ -150,7 +137,8 @@ const Popup = ({ handleClose }) => {
                   whileTap={{ scale: 0.8 }}
                   type="submit"
                   className="form-button"
-                  value="SEND">
+                  value="SEND"
+                  onClick={handleClose}>
                   SEND
                 </motion.button>
               </li>
